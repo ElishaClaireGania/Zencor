@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Zencor | Products</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/hero-nav.css" />
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/product-filter.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Scroll Up -->
+    <button id="scrollToTop" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="index.html" class="logo" title="Zencor">
+          <img src="img/zencor-logo.png" alt="Zencor Logo" loading="eager" />
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="index.html" title="Home">Home</a></li>
+          <li>
+            <a href="about.html" title="About Us">About Us</a>
+          </li>
+          <li>
+            <a href="product.html" class="active" title="Products">Products</a>
+          </li>
+          <li><a href="blog.html" title="Blog">Blog</a></li>
+          <li><a href="contact.html" title="Contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <img
+      class="hero-image"
+      src="img/products-hero.png"
+      alt="Hero Image"
+      loading="eager"
+    />
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Solutions That Grow With You</h1>
+        <p>
+          From protection to nourishment, explore our range of products designed
+          to make farming easier, safer, and more sustainable.
+        </p>
+      </div>
+    </div>
+
+    <!-- Product Filters -->
+    <section class="products">
+      <h5>Our Product Line</h5>
+      <h2>Explore Our Crop Care Solutions</h2>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">
+          ALL PRODUCTS
+        </button>
+        <button class="filter-btn" data-filter="Herbicide">HERBICIDES</button>
+        <button class="filter-btn" data-filter="Insecticide">
+          INSECTICIDES
+        </button>
+        <button class="filter-btn" data-filter="Fungicide">FUNGICIDES</button>
+        <button class="filter-btn" data-filter="Molluscicide">
+          MOLLUSCIDES
+        </button>
+        <button class="filter-btn" data-filter="Fertilizers & Sprayers">
+          FERTILIZERS & SPRAYER
+        </button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+
+      <!-- Divider -->
+      <div class="product-footer-divider">
+        <span class="label-left">Products</span>
+        <hr class="divider-line" />
+        <span class="label-right">Agriculture</span>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+      <div class="feature">
+        <img
+          src="img/vaadin_shield.png"
+          alt="Reliable Protection Icon"
+          class="feature-icon"
+          loading="eager"
+        />
+        <h3>Reliable Protection</h3>
+        <p>
+          Defend your fields from weeds, pests, and diseases with proven
+          solutions.
+        </p>
+      </div>
+      <div class="feature">
+        <img
+          src="img/mdi_plant-outline.png"
+          alt="Smart Nourishment Icon"
+          class="feature-icon"
+          loading="eager"
+        />
+        <h3>Smart Nourishment</h3>
+        <p>
+          Boost growth with fertilizers and sprayers designed to enrich soil.
+        </p>
+      </div>
+      <div class="feature">
+        <img
+          src="img/streamline_spray-paint-remix.png"
+          alt="Easy Application Icon"
+          class="feature-icon"
+          loading="eager"
+        />
+        <h3>Easy Application</h3>
+        <p>
+          Our products are simple to use and built for real farm conditions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="news">
+      <div class="news-content">
+        <img
+          src="img/zencor-logo.png"
+          alt="Zencor Logo"
+          class="news-logo"
+          loading="eager"
+        />
+        <h2>Stay Informed, Grow Smarter</h2>
+        <p>
+          Get the latest crop care tips, product updates, and sustainable
+          farming insights delivered straight to your inbox. Join our community
+          of growers who believe in smarter, greener agriculture.
+        </p>
+        <button class="news-btn">Protect Your Crops →</button>
+      </div>
+
+      <div class="news-image">
+        <img src="img/newsletter.jpg" alt="Zencor Field" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <section class="footer-content">
+        <div class="footer-left">
+          <img
+            src="img/zencor-logo.png"
+            alt="Zencor Logo"
+            class="footer-logo"
+            loading="eager"
+          />
+          <p>
+            Zencor is committed to making farming easier, safer, and more
+            sustainable. Since 2015, we’ve partnered with farmers by providing
+            trusted crop care solutions — from protection to nourishment — that
+            empower communities and ensure harvests for generations to come.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>About Us</h4>
+            <a href="about.html#history">History</a>
+            <a href="about.html#mission">Mission</a>
+            <a href="about.html#vision">Vision</a>
+          </div>
+          <div class="footer-column">
+            <h4>Our Products</h4>
+            <a href="index.html#herbicides">Herbicides</a>
+            <a href="index.html#insecticides">Insecticides</a>
+            <a href="index.html#fungicides">Fungicides</a>
+            <a href="index.html#fertilizersandmore">Fertilizers & more</a>
+          </div>
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" title="Instagram"
+                ><img
+                  src="img/mage_instagram-circle.png"
+                  alt="Instagram"
+                  loading="eager"
+              /></a>
+              <a href="#" title="Facebook"
+                ><img
+                  src="img/ic_baseline-facebook.png"
+                  alt="Facebook"
+                  loading="eager"
+              /></a>
+              <a href="#" title="Twitter"
+                ><img
+                  src="img/formkit_twitter.png"
+                  alt="Twitter"
+                  loading="eager"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="footer-divider" />
+      <p class="copyright">© All Rights Reserved to Zencor.</p>
+    </footer>
+  </body>
+</html>

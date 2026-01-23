@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap");
+
+/* Footer Base */
+.footer {
+  width: 100%;
+  background-color: #2f3e1f;
+  padding: 3vw 6vw;
+  color: #d4e8c2;
+}
+
+/* Logo */
+.footer-logo {
+  width: 8vw;
+  height: auto;
+  margin-bottom: 1.5vw;
+}
+
+/* Description */
+.footer-left p {
+  font-size: 1vw;
+  line-height: 1.6;
+  margin-bottom: 1.5vw;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Divider */
+.footer-divider {
+  border: none;
+  border-top: 1px solid #d4e8c2;
+  margin: 2vw 0;
+}
+
+/* Content Layout */
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2vw;
+  width: 100%;
+}
+
+.footer-left {
+  flex: 1;
+  max-width: 35vw;
+}
+
+/* Links Section */
+.footer-links {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  gap: 3vw;
+}
+
+/* Social Icons */
+.footer-column {
+  flex: 0 1 auto;
+  min-width: 120px;
+  padding-right: 50px;
+}
+
+.footer-column img {
+  width: 40px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.footer-column img:hover {
+  transform: scale(1.1);
+}
+
+.footer-column:last-child {
+  text-align: right;
+}
+
+.footer-column h4 {
+  font-size: 1.2vw;
+  margin-bottom: 1vw;
+  color: #d4e8c2;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-column a {
+  display: block;
+  font-size: 0.95vw;
+  color: #faf3e0;
+  text-decoration: none;
+  margin-bottom: 0.8vw;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.social-icons a {
+  display: flex;
+  margin-bottom: 0;
+  width: auto;
+}
+
+/* Copyright */
+.footer .copyright {
+  text-align: center;
+  font-size: 0.9vw;
+  color: #a3c585;
+  margin-top: 2vw;
+}

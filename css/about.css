@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faf3e0;
+  font-family: "Raleway", sans-serif;
+}
+
+/* ========== ABOUT ZENCOR ========== */
+.about-zencor {
+  width: 100%;
+  background-color: #faf3e0;
+  padding: 80px 0;
+}
+
+.about-inner {
+  padding: 0 120px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.about-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h1 {
+  font-family: "Montserrat", serif;
+
+  font-size: 40px;
+
+  color: #4f6d3a;
+
+  margin-bottom: 20px;
+}
+
+.about-p1,
+.about-p2 {
+  font-family: "Open Sans", sans-serif;
+  color: #2f3e1f;
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 850px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.about-side-img {
+  flex: 1;
+  max-width: 550px;
+}
+
+.about-side-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  background-color: #2f3e1f;
+}
+
+/* LOWER PRODUCT IMAGES */
+.about-images {
+  display: flex;
+  gap: 30px;
+  align-items: flex-end;
+}
+
+.about-img {
+  flex: 1;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 3px solid #4f6d3a;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.about-img:hover {
+  transform: translateY(-10px);
+  border-color: #4f6d3a;
+  cursor: pointer;
+}
+
+/* ========== VISION AND MISSION ========== */
+.vision-mission {
+  position: relative;
+  width: 100%;
+  height: 50.83vw;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mission,
+.vision {
+  position: absolute;
+  background-color: rgba(47, 62, 31, 0.5);
+  border-radius: 10px;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: 2.78vw;
+}
+
+.mission {
+  top: 4.31vw;
+  left: 0;
+  width: 50.76vw;
+  height: 19.1vw;
+  text-align: right;
+}
+
+.vision {
+  top: 27.01vw;
+  left: 49.24vw;
+  width: 50.76vw;
+  height: 19.1vw;
+  text-align: left;
+}
+
+.mission h2,
+.vision h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #faf3e0;
+  font-size: 40px;
+  margin-bottom: 1.39vw;
+}
+
+.mission p,
+.vision p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  color: #d4e8c2;
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+/* ========== VALUES ========== */
+.values {
+  width: 100%;
+  background-color: #d4e8c2;
+  padding: 5.35vw 7.92vw 6.94vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 6.94vw;
+  margin-bottom: 170px;
+  box-sizing: border-box;
+}
+
+.values h2 {
+  font-size: 2.78vw;
+  color: #4f6d3a;
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  margin: 0;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.36vw 5vw;
+  flex: 1;
+}
+
+.value-card {
+  width: 100%;
+  max-width: 27.78vw;
+  border-radius: 7px;
+  border: 3px solid #2f3e1f80;
+  background-color: transparent;
+  padding: 2.36vw;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.value-card:hover {
+  background-color: #2f3e1f;
+  border-color: #2f3e1f;
+  cursor: pointer;
+  transform: translateY(-1.5vw);
+  box-shadow: 0 1.5vw 3vw rgba(47, 62, 31, 0.2);
+}
+
+.value-card i {
+  font-size: 2.78vw;
+  color: #4f6d3a;
+  margin-bottom: 1.11vw;
+}
+
+.value-card h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #4f6d3a;
+  font-size: 1.67vw;
+  margin-bottom: 1.39vw;
+}
+
+.value-card p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  color: #2f3e1f;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.value-card i,
+.value-card h3,
+.value-card p {
+  transition: color 0.4s ease;
+}
+
+.value-card:hover i,
+.value-card:hover h3,
+.value-card:hover p {
+  color: #d4e8c2;
+}
