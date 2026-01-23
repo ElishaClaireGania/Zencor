@@ -667,7 +667,7 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
   }
 
   .support-inner h2 {
@@ -695,7 +695,6 @@ body {
   .support-content p {
     text-align: center;
     max-width: 100%;
-    margin: 0 auto;
   }
 
   /* Why Choose Zencor Stacked */
