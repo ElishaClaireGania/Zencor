@@ -499,6 +499,25 @@ body {
     padding: 0 40px;
   }
 
+  /* Banner Section */
+  .banner {
+    padding: 60px 40px;
+  }
+
+  .banner h2 {
+    font-size: 32px;
+  }
+
+  .banner p {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .banner img {
+    max-width: 800px;
+    padding: 15px;
+  }
+
   /* Solutions Section */
   .solutions-inner {
     flex-direction: column;
@@ -566,8 +585,14 @@ body {
   }
 
   .banner h2 {
-    font-size: 26px;
+    font-size: 24px;
   }
+
+  .banner p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
   .banner img {
     width: 100%;
     padding: 10px;
