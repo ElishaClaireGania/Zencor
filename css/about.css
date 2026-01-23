@@ -69,7 +69,8 @@ body {
   height: 400px;
   object-fit: cover;
   border-radius: 8px;
-  background-color: #2f3e1f;
+  border: 3px solid #4f6d3a;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 /* LOWER PRODUCT IMAGES */
@@ -170,7 +171,7 @@ body {
 .values h2 {
   font-size: 2.78vw;
   color: #4f6d3a;
-  font-family: "Playfair Display", serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   margin: 0;
   white-space: nowrap;
@@ -236,4 +237,166 @@ body {
 .value-card:hover h3,
 .value-card:hover p {
   color: #d4e8c2;
+}
+
+/* RESPONSIVE VIEWS */
+/* ========== TABLET VIEW (max-width: 1024px) ========== */
+@media screen and (max-width: 1024px) {
+  /* About Zencor Section */
+  .about-inner {
+    padding: 0 40px;
+    gap: 40px;
+  }
+
+  .about-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-content h1 {
+    font-size: 36px;
+  }
+
+  .about-side-img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  /* Vision and Mission - Remove Absolute Positioning */
+  .vision-mission {
+    height: auto; /* Allow section to grow with content */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+    background: #2f3e1f; /* Fallback color */
+  }
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0.4; /* Dim background to make text readable */
+  }
+
+  .mission,
+  .vision {
+    position: relative; /* Change from absolute */
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    text-align: center !important;
+    z-index: 2;
+    padding: 40px;
+  }
+
+  .mission h2,
+  .vision h2 {
+    font-size: 32px;
+  }
+
+  .mission p,
+  .vision p {
+    font-size: 20px;
+  }
+
+  /* Values Section */
+  .values {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 40px;
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  .values h2 {
+    font-size: 32px;
+    white-space: normal;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    gap: 20px;
+  }
+
+  .value-card {
+    max-width: 100%;
+    padding: 30px;
+  }
+
+  .value-card i {
+    font-size: 40px;
+  }
+  .value-card h3 {
+    font-size: 20px;
+  }
+}
+
+/* ========== MOBILE VIEW (max-width: 768px) ========== */
+@media screen and (max-width: 768px) {
+  .about-inner {
+    padding: 0 20px;
+  }
+
+  .about-content h1 {
+    font-size: 28px;
+  }
+
+  .about-p1,
+  .about-p2 {
+    font-size: 16px;
+  }
+
+  .about-side-img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .about-side-img img {
+    height: 180px;
+    border: 3px solid #4f6d3a;
+  }
+
+  /* The 2x2 Grid for the remaining 4 images */
+  .about-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  .about-img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  /* Vision/Mission Typography */
+  .mission h2,
+  .vision h2 {
+    font-size: 26px;
+  }
+
+  .mission p,
+  .vision p {
+    font-size: 18px;
+  }
+
+  /* Values Section Stacking */
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .value-card {
+    text-align: center;
+  }
+
+  .value-card i {
+    margin: 0 auto 15px auto;
+  }
 }

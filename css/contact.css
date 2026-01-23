@@ -232,12 +232,20 @@ textarea.form-control {
   padding: 0 120px;
 }
 
+/* MAP */
 .map-container {
   flex: 1;
   height: 450px;
   border: 6px solid #faf3e0;
   border-radius: 4px;
   overflow: hidden;
+  display: flex;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 /* Text Styling */
@@ -279,4 +287,121 @@ textarea.form-control {
   color: #faf3e0;
   width: 30px;
   text-align: center;
+}
+
+/* ========== TABLET VIEW (max-width: 1024px) ========== */
+@media screen and (max-width: 1024px) {
+  .content-wrapper {
+    flex-direction: column; /* Stack Form and Info */
+    padding: 60px 40px;
+    gap: 40px;
+  }
+
+  .contact-form,
+  .contact-info {
+    flex: none;
+    width: 100%;
+  }
+
+  /* Adjust Form Rows to stay side-by-side on tablet */
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+
+  .tp2-image {
+    height: 350px; /* Slightly shorter on tablet */
+  }
+
+  /* Map Section */
+  .find-us-content {
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 350px;
+  }
+
+  .location-info {
+    order: 1;
+    margin-bottom: 40px;
+  }
+
+  .info-list {
+    align-items: center;
+  }
+}
+
+/* ========== MOBILE VIEW (max-width: 768px) ========== */
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    padding: 40px 20px;
+  }
+
+  .contact-form {
+    padding: 30px 20px;
+  }
+
+  .contact-form h3 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .form-intro {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* Stack Name/Email fields on Mobile */
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .btn {
+    width: 100%; /* Full width button for easy clicking */
+    float: none;
+  }
+
+  /* Detail Items */
+  .detail-item {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .partner-glass {
+    left: 10px;
+    top: 10px;
+    padding: 15px;
+    width: calc(100% - 20px);
+    text-align: center;
+  }
+
+  .partner-glass h3 {
+    font-size: 20px;
+  }
+
+  /* Map and Location */
+  .find-us-section {
+    padding: 60px 0;
+  }
+
+  .map-container {
+    width: 100%;
+    height: 350px;
+  }
+
+  .location-info h2 {
+    font-size: 28px;
+  }
+
+  .info-item {
+    font-size: 15px;
+    flex-direction: column;
+    gap: 5px;
+  }
 }

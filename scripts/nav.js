@@ -1,17 +1,17 @@
-// Mobile Menu Toggle
-const menu = document.querySelector("#mobile-menu");
-const menuLinks = document.querySelector(".nav-links");
+// MOBILE MENU TOGGLE
+const menuToggle = document.getElementById("mobile-menu");
+const navLinks = document.querySelector(".nav-links");
 
-menu.addEventListener("click", () => {
-  menuLinks.classList.toggle("active");
-  menu.classList.toggle("is-active");
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("active"); // animate bars → X
+  navLinks.classList.toggle("active"); // slide menu in/out
 });
 
 // Close menu when a link is clicked
-document.querySelectorAll(".nav-links a").forEach((n) =>
-  n.addEventListener("click", () => {
-    menuLinks.classList.remove("active");
-    menu.classList.remove("is-active");
+document.querySelectorAll(".nav-links a").forEach((link) =>
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+    menuToggle.classList.remove("active");
   }),
 );
 
@@ -19,11 +19,12 @@ document.querySelectorAll(".nav-links a").forEach((n) =>
 const scrollBtn = document.getElementById("scrollToTop");
 
 window.onscroll = function () {
+  // Increased threshold slightly to account for the taller mobile Hero
   if (
-    document.body.scrollTop > 300 ||
-    document.documentElement.scrollTop > 300
+    document.body.scrollTop > 500 ||
+    document.documentElement.scrollTop > 500
   ) {
-    scrollBtn.style.display = "block";
+    scrollBtn.style.display = "flex";
   } else {
     scrollBtn.style.display = "none";
   }

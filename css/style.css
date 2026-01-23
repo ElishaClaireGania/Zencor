@@ -128,11 +128,8 @@ body {
   color: #2f3e1f;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
-  font-style: normal;
   font-weight: 700;
-  line-height: normal;
-  margin-bottom: 50px;
-  margin-top: 5px;
+  margin-bottom: 60px;
 }
 
 .banner img {
@@ -140,6 +137,13 @@ body {
   padding: 20px;
   background: #8a9a5b;
   border-radius: 14px;
+}
+
+/* Banner box container */
+.banner-box {
+  display: inline-block;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /* HIGHLIGHTED SECTION */
@@ -160,12 +164,16 @@ body {
 
 .header-text h2 {
   color: #4f6d3a;
-  font-size: 36px;
-  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .header-text p {
   color: #2f3e1f;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   max-width: 700px;
   font-weight: 700;
@@ -175,26 +183,26 @@ body {
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  gap: 20px;
   width: 100%;
 }
 
 .card {
   background-color: #4f6d3a;
-  padding: 25px;
+  padding: 20px;
   border-radius: 4px;
   color: #faf3e0;
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 430px;
+  min-height: 320px;
 }
 
 .card-img-wrapper {
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   width: 100%;
-  height: 300px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -274,6 +282,7 @@ body {
 
 .support-sub {
   color: #2f3e1f;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   max-width: 600px;
   margin-bottom: 80px;
@@ -290,7 +299,6 @@ body {
   width: 100%;
 }
 
-/* When the row is reversed, align image to the right edge (where the button was) */
 .support-row.reverse .support-image-box {
   justify-content: flex-end;
 }
@@ -489,171 +497,222 @@ body {
 }
 
 /* RESPONSIVE VIEWS */
-/* ========== TABLET VIEW ========== */
+/* ========== TABLET VIEW (max-width: 1024px) ========== */
 @media screen and (max-width: 1024px) {
-  /* Global Padding Adjustments */
-  .support-inner,
-  .why-inner,
-  .highlighted,
-  .solutions-inner {
-    padding: 0 40px;
-  }
-
-  /* Banner Section */
-  .banner {
-    padding: 60px 40px;
-  }
-
-  .banner h2 {
-    font-size: 32px;
-  }
-
-  .banner p {
-    font-size: 16px;
-    margin-bottom: 40px;
-  }
-
-  .banner img {
-    max-width: 800px;
-    padding: 15px;
-  }
-
   /* Solutions Section */
   .solutions-inner {
     flex-direction: column;
     text-align: center;
     gap: 40px;
+    padding: 0 40px;
   }
 
   .solutions-grid {
     flex: 0 0 auto;
     width: 100%;
-    max-width: 600px;
     margin-left: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 20px;
   }
 
-  /* Support Rows */
-  .support-row,
-  .support-row.reverse {
-    gap: 40px;
+  .product-img:nth-child(n) {
+    grid-row: auto / span 1 !important;
   }
 
-  /* Highlighted Grid */
+  /* Highlighted Products */
+  .highlighted {
+    padding: 60px 40px;
+  }
+
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-}
 
-/* ========== MOBILE VIEW ========== */
-@media screen and (max-width: 768px) {
-  /* Global Spacing */
-  .solutions,
-  .support,
-  .why-choose,
-  .highlighted {
-    padding: 60px 0;
-  }
-
-  .solutions-inner,
-  .support-inner,
-  .why-inner,
-  .highlighted {
-    padding: 0 20px;
-  }
-
-  /* Solutions Section */
-  .solutions-grid {
-    grid-auto-rows: 35px;
-    gap: 15px;
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  .solutions-text h2 {
-    font-size: 28px;
-    margin-top: 20px;
-  }
-
-  .solutions-text p {
-    font-size: 16px;
-  }
-
-  /* Discover Banner */
+  /* Banner Fix for Tablet */
   .banner {
-    padding: 40px 20px;
+    padding: 60px 30px;
+    overflow: hidden; /* Safety against horizontal scroll */
   }
 
-  .banner h2 {
-    font-size: 24px;
-  }
-
-  .banner p {
-    font-size: 16px;
-    margin-bottom: 30px;
+  .banner-box {
+    width: 100%;
+    max-width: 90%; /* Keeps it from touching edges */
+    margin: 0 auto;
   }
 
   .banner img {
     width: 100%;
-    padding: 10px;
+    height: auto;
+    box-sizing: border-box; /* Ensures padding doesn't add to width */
   }
 
-  /* Highlighted Products */
+  /* Why Choose */
+  .benefits-grid {
+    display: flex;
+    flex-direction: row; /* Keeps 3-card layout */
+    gap: 20px;
+  }
+
+  .benefit-card {
+    padding: 40px 15px;
+    flex: 1;
+  }
+
+  /* Why Choose Zencor - Locked 3-Card Layout */
+  .why-inner {
+    padding: 0 20px;
+  }
+
+  .benefits-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 15px;
+    width: 100%;
+  }
+
+  .benefit-card {
+    flex: 1;
+    padding: 30px 15px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .benefit-card i {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+
+  .benefit-card p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+/* ========== MOBILE VIEW (max-width: 768px) ========== */
+@media screen and (max-width: 768px) {
+  /* Global Typography */
+  h2 {
+    font-size: 28px !important;
+  }
+
+  /* Solutions Section */
+  .solutions {
+    padding: 60px 0;
+  }
+
+  .solutions-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .solutions-text h2 {
+    font-size: 32px;
+  }
+
+  /* Banner Fix  */
+  .banner {
+    padding: 40px 15px;
+  }
+
+  .banner-box {
+    width: 100%;
+  }
+
+  .banner img {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  /* Highlighted Section */
   .highlighted-header {
     flex-direction: column;
-    align-items: center;
     text-align: center;
-    gap: 20px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .highlighted-header .btn,
+  .explore-btn {
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
   }
 
   .product-grid {
     grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .card {
-    min-height: auto;
-    padding: 20px;
+    gap: 30px;
   }
 
   /* Support Section */
   .support-row,
   .support-row.reverse {
-    flex-direction: column !important;
-    gap: 30px;
+    flex-direction: column;
     text-align: center;
-    margin-bottom: 60px;
+    gap: 50px;
+    margin-bottom: 100px;
   }
 
-  .support-image-box {
-    justify-content: center !important;
-  }
-
-  .support-image-box img {
-    max-width: 280px;
-  }
-
-  .support-content {
+  .support-inner {
     align-items: center;
-  }
-
-  .support-title {
+    padding: 0 30px;
     flex-direction: column;
-    gap: 10px;
+    text-align: center;
+    align-items: center;
+    gap: 30px;
   }
 
-  /* Why Choose Zencor */
-  .why-choose {
-    margin-bottom: 60px;
+  .support-inner h2 {
+    text-align: center;
+    margin-bottom: 10px;
   }
 
+  .support-inner p {
+    max-width: 500px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  /* Why Choose Zencor Stacked */
   .benefits-grid {
-    flex-direction: column;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+    justify-items: center;
   }
 
   .benefit-card {
-    min-height: auto;
-    padding: 40px 20px;
+    width: 90%;
+    max-width: 320px;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+
+  .benefit-card i {
+    font-size: 32px;
+    margin: 0 0 12px 0;
+  }
+
+  .benefit-card h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .benefit-card p {
+    font-size: 14px;
   }
 }

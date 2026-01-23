@@ -333,3 +333,123 @@ body {
   object-fit: cover;
   display: block;
 }
+
+/* RESPONSIVE VIEWS */
+/* ========== TABLET VIEW (max-width: 1024px) ========== */
+@media screen and (max-width: 1024px) {
+  /* Products Section */
+  .products {
+    padding: 60px 40px;
+  }
+
+  .products h2 {
+    font-size: 36px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+  }
+
+  /* Features Section */
+  .features {
+    padding: 60px 5%;
+    grid-template-columns: 1fr; /* Stack features */
+    gap: 40px;
+  }
+
+  .feature {
+    border-right: none;
+    border-bottom: 1px solid rgba(250, 243, 224, 0.3);
+    padding-bottom: 40px;
+  }
+
+  .feature:last-child {
+    border-bottom: none;
+  }
+
+  /* Newsletter Section */
+  .news {
+    grid-template-columns: 1fr; /* Stack image and text */
+  }
+
+  .news-content {
+    padding: 60px 40px;
+    text-align: center;
+    order: 2; /* Text goes below the image */
+  }
+
+  .news-image {
+    height: 400px;
+    order: 1; /* Image goes on top */
+  }
+
+  .news-logo {
+    margin: 0 auto 30px auto;
+  }
+
+  .news p {
+    margin: 0 auto 40px auto;
+  }
+
+  .news-btn {
+    margin: 20px auto 0 auto; /* Reset that large left margin */
+  }
+}
+
+/* ========== MOBILE VIEW (max-width: 768px) ========== */
+@media screen and (max-width: 768px) {
+  .products {
+    padding: 40px 20px;
+  }
+
+  .products h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  /* Filters */
+  .filters {
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+
+  .filters button {
+    padding: 8px 15px;
+    font-size: 11px;
+  }
+
+  /* Product Grid */
+  .product-grid {
+    grid-template-columns: 1fr; /* Single column for phones */
+  }
+
+  .product-card {
+    align-items: center;
+    text-align: center;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 250px;
+  }
+
+  /* Feature Text */
+  .feature h3 {
+    font-size: 28px;
+  }
+
+  /* Newsletter Typography */
+  .news h2 {
+    font-size: 30px;
+  }
+
+  .news-content {
+    padding: 40px 20px;
+  }
+
+  /* Divider */
+  .product-footer-divider {
+    padding: 0 20px 40px 20px;
+    font-size: 12px;
+  }
+}
