@@ -5,18 +5,21 @@ const products = [
     type: "Fungicide",
     price: "₱550.00",
     img: "../img/s-Code250EC.webp",
+    altText: "S-Code 250EC",
   },
   {
     name: "Shaw 720SC",
     type: "Fungicide",
     price: "₱400.00",
     img: "../img/shaw720SC.webp",
+    altText: "Shaw 720SC",
   },
   {
     name: "Zencor Mancozeb 80WP",
     type: "Fungicide",
     price: "₱455.00",
     img: "../img/mancozeb80WP.webp",
+    altText: "Zencor Mancozeb 80WP",
   },
   //   Insecticides
   {
@@ -24,36 +27,42 @@ const products = [
     type: "Insecticide",
     price: "₱550.00",
     img: "../img/lanex40SP.webp",
+    altText: "Lanex 40SP",
   },
   {
     name: "Era 2.5EC",
     type: "Insecticide",
     price: "₱345.00",
     img: "../img/era2.5EC.webp",
+    altText: "Era 2.5EC",
   },
   {
     name: "Armethrin 5EC",
     type: "Insecticide",
     price: "₱350.00",
     img: "../img/armethrin5EC.webp",
+    altText: "Armethrin 5EC",
   },
   {
     name: "Mandal 100SC",
     type: "Insecticide",
     price: "₱750.00",
     img: "../img/mandal100SC.webp",
+    altText: "Mandal 100SC",
   },
   {
     name: "Gusto 500EC",
     type: "Insecticide",
     price: "₱520.00",
     img: "../img/gusto500EC.webp",
+    altText: "Gusto 500EC",
   },
   {
     name: "Malathion 57EC",
     type: "Insecticide",
     price: "₱250.00",
     img: "img/malathion57EC.webp",
+    altText: "Malathion 57EC",
   },
   //   Herbicides
   {
@@ -61,18 +70,21 @@ const products = [
     type: "Herbicide",
     price: "₱750.00",
     img: "../img/maradi200OD.webp",
+    altText: "Maradi 200OD",
   },
   {
     name: "Across 8.5EC",
     type: "Herbicide",
     price: "₱735.00",
     img: "../img/across8.5EC.webp",
+    altText: "Across 8.5EC",
   },
   {
     name: "Ez-Out 480SL",
     type: "Herbicide",
     price: "₱400.00",
     img: "../img/ez-Out480SL.webp",
+    altText: "Ez-Out 480SL",
   },
   //   Molluscicides
   {
@@ -80,12 +92,14 @@ const products = [
     type: "Molluscicide",
     price: "₱280.00",
     img: "../img/toss-up.webp",
+    altText: "Toss-Up (Metaldehyde) 6% Pellet",
   },
   {
     name: "Zencocide 70WP",
     type: "Molluscicide",
     price: "₱750.00",
     img: "img/zencocide70WP.webp",
+    altText: "Zencocide 70WP",
   },
   //   Fertilizers & Sprayers
   {
@@ -93,12 +107,14 @@ const products = [
     type: "Fertilizers & Sprayers",
     price: "₱870.00",
     img: "../img/foliarfertilizer.webp",
+    altText: "Zencor Plus Highgrade",
   },
   {
     name: "Knapsack Sprayer",
     type: "Fertilizers & Sprayers",
     price: "₱1,500.00",
     img: "../img/knapsackSprayer.webp",
+    altText: "Knapsack Sprayer",
   },
 ];
 
@@ -125,7 +141,7 @@ function displayProducts(filter = "all") {
     const card = `
       <div class="product-card reveal">
         <div class="product-image">
-          <img src="${product.img}" alt="${product.name}" loading="lazy">
+          <img src="${product.img}" alt="${product.altText}" loading="lazy">
         </div>
         <div class="product-info">
           <div class="product-name">${product.name}</div>
