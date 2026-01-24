@@ -129,7 +129,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .banner img {
@@ -292,7 +292,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   max-width: 600px;
-  margin-bottom: 80px;
+  margin-bottom: 30px;
   font-weight: 700;
 }
 
@@ -506,6 +506,23 @@ body {
 /* RESPONSIVE VIEWS */
 /* ========== TABLET VIEW (max-width: 1024px) ========== */
 @media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h3 {
+    font-size: 22px;
+  }
+
+  .benefit-card h3 {
+    font-size: 20px;
+  }
+  .benefit-card p {
+    font-size: 15px;
+  }
+
   /* Solutions Section */
   .solutions-inner {
     flex-direction: column;
@@ -540,25 +557,43 @@ body {
   /* Banner Fix for Tablet */
   .banner {
     padding: 60px 30px;
-    overflow: hidden; /* Safety against horizontal scroll */
+    overflow: hidden;
   }
 
   .banner-box {
     width: 100%;
-    max-width: 90%; /* Keeps it from touching edges */
+    max-width: 90%;
     margin: 0 auto;
   }
 
   .banner img {
     width: 100%;
     height: auto;
-    box-sizing: border-box; /* Ensures padding doesn't add to width */
+    box-sizing: border-box;
+  }
+
+  .banner video {
+    max-width: 95%;
+    padding: 10px;
+  }
+
+  .support-img {
+    flex: 1;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .support-img img {
+    width: 100%;
+    border-radius: 12px;
   }
 
   /* Why Choose */
   .benefits-grid {
     display: flex;
-    flex-direction: row; /* Keeps 3-card layout */
+    flex-direction: row;
     gap: 20px;
   }
 
@@ -567,7 +602,7 @@ body {
     flex: 1;
   }
 
-  /* Why Choose Zencor - Locked 3-Card Layout */
+  /* Why Choose Zencor */
   .why-inner {
     padding: 0 20px;
   }
@@ -604,8 +639,30 @@ body {
 /* ========== MOBILE VIEW (max-width: 768px) ========== */
 @media screen and (max-width: 768px) {
   /* Global Typography */
+  h1 {
+    font-size: 26px !important;
+    line-height: 1.2;
+  }
   h2 {
-    font-size: 28px !important;
+    font-size: 24px !important;
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  h4 {
+    font-size: 18px !important;
+  }
+
+  p,
+  .benefit-card p {
+    font-size: 14px !important;
+    line-height: 1.5;
+  }
+
+  .banner p {
+    font-size: 15px;
+    padding: 0 10px;
   }
 
   /* Solutions Section */
@@ -614,8 +671,16 @@ body {
   }
 
   .solutions-grid {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 15px;
+    width: 100%;
+  }
+
+  .product-img:nth-child(n) {
+    grid-row: auto / span 1 !important;
+    width: 100%;
+    height: auto;
   }
 
   .solutions-text h2 {
@@ -637,6 +702,22 @@ body {
     padding: 10px;
     border-radius: 8px;
     box-sizing: border-box;
+  }
+
+  .banner video {
+    max-width: 100%;
+    padding: 5px;
+    border-radius: 8px;
+  }
+
+  /* Reduce Button Sizes */
+  .primary-btn,
+  .support-btn,
+  .outline-btn,
+  .btn {
+    padding: 8px 16px !important;
+    font-size: 14px !important;
+    width: fit-content;
   }
 
   /* Highlighted Section */
@@ -702,6 +783,18 @@ body {
   .support-content p {
     text-align: center;
     max-width: 100%;
+  }
+
+  .support-img {
+    width: 85%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .support-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
   }
 
   /* Why Choose Zencor Stacked */
