@@ -135,8 +135,15 @@ body {
 .banner img {
   max-width: 1000px;
   padding: 20px;
-  background: #8a9a5b;
   border-radius: 14px;
+}
+
+.banner-box video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 /* Banner box container */

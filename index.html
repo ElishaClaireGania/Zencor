@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/hero-nav.css" />
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/video.js" defer></script>
   </head>
 
   <body>
@@ -117,7 +118,16 @@
         communities.
       </p>
       <div class="banner-box">
-        <img src="img/discover-home.jpg" loading="lazy" />
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          class="lazy-video"
+          poster="img/discover-home.jpg"
+        >
+          <source data-src="img/zencor_vid.mp4" type="video/mp4" />
+        </video>
       </div>
     </section>
 
