@@ -347,13 +347,13 @@ body {
   }
 
   .product-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
+    grid-template-columns: repeat(2, 1fr);
   }
 
   /* Features Section */
   .features {
     padding: 60px 5%;
-    grid-template-columns: 1fr; /* Stack features */
+    grid-template-columns: 1fr;
     gap: 40px;
   }
 
@@ -369,18 +369,18 @@ body {
 
   /* Newsletter Section */
   .news {
-    grid-template-columns: 1fr; /* Stack image and text */
+    grid-template-columns: 1fr;
   }
 
   .news-content {
     padding: 60px 40px;
     text-align: center;
-    order: 2; /* Text goes below the image */
+    order: 2;
   }
 
   .news-image {
     height: 400px;
-    order: 1; /* Image goes on top */
+    order: 1;
   }
 
   .news-logo {
@@ -392,7 +392,7 @@ body {
   }
 
   .news-btn {
-    margin: 20px auto 0 auto; /* Reset that large left margin */
+    margin: 20px auto 0 auto;
   }
 }
 
@@ -420,7 +420,7 @@ body {
 
   /* Product Grid */
   .product-grid {
-    grid-template-columns: 1fr; /* Single column for phones */
+    grid-template-columns: 1fr;
   }
 
   .product-card {
