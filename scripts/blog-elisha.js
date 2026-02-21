@@ -7,7 +7,7 @@ author: "Elisha Claire Gania",
 date: "February 2026",
 readTime: "8 min read",
 category: "Insecticides",
-image: "img/insecticide.jpg",
+image: "img/mandal100SC.webp",
 
 content: `
 
@@ -62,9 +62,8 @@ content: `
 <p>Source adapted and rewritten from: Redeko Manufacturing – Agricultural Pests Around the World</p>
 
 `
-}
+},
 
-{
 {
 id: 6,
 title: "Importance of Pest Management in Agriculture for Filipino Farmers",
@@ -72,7 +71,7 @@ author: "Elisha Claire Gania",
 date: "February 2026",
 readTime: "8 min read",
 category: "Insecticides",
-image: "img/insecticide.jpg",
+image: "img/armethrin5EC.webp",
 
 content: `
 
