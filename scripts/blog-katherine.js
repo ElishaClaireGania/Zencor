@@ -7,7 +7,7 @@ author: "Katherine Sanchez",
 date: "February 2026",
 readTime: "8 min read",
 category: "Herbicides",
-image: "img/herbicide.jpg",
+image: "img/ez-Out480SL.webp",
 
 content: `
 
@@ -74,8 +74,7 @@ content: `
 <p>Source adapted and rewritten from: Hunter Regional Weeds – Impact of Weeds</p>
 
 `
-}
-
+},
 
 {
 id: 4,
@@ -84,7 +83,7 @@ author: "Katherine Sanchez",
 date: "February 2026",
 readTime: "8 min read",
 category: "Herbicides",
-image: "img/herbicide.jpg",
+image: "img/maradi200OD.webp",
 
 content: `
 
@@ -147,4 +146,6 @@ content: `
 `
 }
 ];
+
+
 
