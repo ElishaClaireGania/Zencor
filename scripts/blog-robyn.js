@@ -7,7 +7,7 @@ author: "Robyn Gonzales",
 date: "February 2026",
 readTime: "8 min read",
 category: "Fungicides",
-image: "img/fungicide.jpg",
+image: "img/mancozeb80WP.webp",
 
 content: `
 
@@ -68,7 +68,7 @@ content: `
 <p>Source adapted and rewritten from: Common Crop Diseases – Plant Reviewer</p>
 
 `
-}
+},
 {
 id: 8,
 title: "Role of Fungicides in Crop Protection for Filipino Farmers",
@@ -76,7 +76,7 @@ author: "Robyn Gonzales",
 date: "February 2026",
 readTime: "8 min read",
 category: "Fungicides",
-image: "img/fungicide.jpg",
+image: "img/shaw720SC.webp",
 
 content: `
 
