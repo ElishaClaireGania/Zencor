@@ -7,7 +7,7 @@ author: "Andrew Dizon",
 date: "February 2026",
 readTime: "8 min read",
 category: "Nutrition",
-image: "img/foliarfertilizer.jpg",
+image: "img/zencocide70WP.webp",
 
 content: `
 
@@ -70,7 +70,7 @@ content: `
 <p>Source adapted and rewritten from: LibreTexts Biology – Essential Nutrients for Plants</p>
 
 `
-}
+},
 {
 id: 10,
 title: "Understanding Fertilizer and Its Essential Role in Improving Crop Yield in the Philippines",
@@ -78,7 +78,7 @@ author: "Andrew Dizon",
 date: "February 2026",
 readTime: "8 min read",
 category: "Nutrition",
-image: "img/foliarfertilizer.jpg",
+image: "img/toss-up.webp",
 
 content: `
 
