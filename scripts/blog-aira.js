@@ -7,7 +7,7 @@ author: "Aira Rosal",
 date: "February 2026",
 readTime: "8 min read",
 category: "Nutrition",
-image: "img/foliarfertilizer.jpg",
+image: "img/foliarfertilizer.webp",
 
 content: `
 
@@ -62,7 +62,7 @@ content: `
 <p>Source adapted and rewritten from: Yara International – Why is fertilizer important?</p>
 
 `
-}
+},
 
 {
 id: 2,
@@ -71,7 +71,7 @@ author: "Aira Rosal",
 date: "February 2026",
 readTime: "8 min read",
 category: "Nutrition",
-image: "img/foliarfertilizer.jpg",
+image: "img/gusto500EC.webp",
 
 content: `
 
@@ -134,4 +134,5 @@ content: `
 `
 }
 ];
+
 
