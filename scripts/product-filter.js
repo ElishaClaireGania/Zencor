@@ -18,7 +18,7 @@ const products = [
     name: "Zencor Mancozeb 80WP",
     type: "Fungicide",
     price: "₱455.00",
-    img: "img/mancozeb80WP.webp",
+    img: "img/mancozeb80wp.webp",
     altText: "Zencor Mancozeb 80WP",
   },
   //   Insecticides
@@ -33,7 +33,7 @@ const products = [
     name: "Era 2.5EC",
     type: "Insecticide",
     price: "₱345.00",
-    img: "img/era2.5EC.webp",
+    img: "img/era25EC.webp",
     altText: "Era 2.5EC",
   },
   {
@@ -76,7 +76,7 @@ const products = [
     name: "Across 8.5EC",
     type: "Herbicide",
     price: "₱735.00",
-    img: "img/across8.5EC.webp",
+    img: "img/across85EC.webp",
     altText: "Across 8.5EC",
   },
   {
@@ -106,7 +106,7 @@ const products = [
     name: "Zencor Plus Highgrade",
     type: "Fertilizers & Sprayers",
     price: "₱870.00",
-    img: "img/foliarfertilizer.webp",
+    img: "/img/foliarfertilizer.webp",
     altText: "Zencor Plus Highgrade",
   },
   {

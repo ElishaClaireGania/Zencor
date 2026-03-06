@@ -499,7 +499,7 @@ const robynPosts = [
     date: "February 2026",
     readTime: "5 min read",
     category: "Fungicides",
-    image: "img/mancozeb80WP.webp",
+    image: "img/mancozeb80wp.webp",
     content: `
       <h2>Crop Diseases: Hidden Threats That Destroy Harvests</h2>
       
