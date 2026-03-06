@@ -106,7 +106,7 @@ const products = [
     name: "Zencor Plus Highgrade",
     type: "Fertilizers & Sprayers",
     price: "₱870.00",
-    img: "/img/foliarfertilizer.webp",
+    img: "img/foliarfertilizer.webp",
     altText: "Zencor Plus Highgrade",
   },
   {
