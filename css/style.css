@@ -1,24 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap");
-
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&family=Raleway:wght@400;500;600&display=swap);
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   background: #faf3e0;
   color: #2f3e1f;
   font-family: "Montserrat", sans-serif;
 }
-
-/* ========== SOLUTIONS ========== */
 .solutions {
   background: #2f3e1f;
   width: 100%;
   padding: 100px 0;
 }
-
 .solutions-inner {
   max-width: 1285px;
   margin: 0 auto;
@@ -27,7 +22,6 @@ body {
   align-items: center;
   padding: 0 10px;
 }
-
 .solutions-grid {
   flex: 0 0 700px;
   display: grid;
@@ -48,52 +42,38 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-/* IMAGE POSITIONS */
-/* Top Left: Starts at the very top */
 .product-img:nth-child(1) {
   grid-row: 1 / span 6;
 }
-
-/* Top Right: Starts at row 3 (creates the downward offset) */
 .product-img:nth-child(2) {
   grid-row: 3 / span 6;
 }
-
-/* Bottom Left: Starts after the first image */
 .product-img:nth-child(3) {
   grid-row: 7 / span 6;
 }
-
-/* Bottom Right: Starts after the second image */
 .product-img:nth-child(4) {
   grid-row: 9 / span 6;
 }
-
-/* TEXT BLOCK */
 .solutions-text {
   flex: 1;
   color: #faf3e0;
 }
-
 .solutions-text h2 {
   font-size: 48px;
   margin-bottom: 20px;
 }
-
 .solutions-text p {
   font-size: 20px;
   line-height: 1.6;
   color: #d4e8c2;
 }
-
 .primary-btn {
   color: #faf3e0;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
   font-weight: 700;
   cursor: pointer;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 14px rgb(0 0 0 / 0.2);
   transition: 0.2s ease;
   border-radius: 7px;
   background: #8a9a5b;
@@ -102,19 +82,15 @@ body {
   border: none;
   margin-top: 40px;
 }
-
 .primary-btn:hover {
   background-color: #4f6d3a;
   color: #faf3e0;
   transform: translateY(-2px);
 }
-
-/* ========== DISCOVER ========== */
 .banner {
   text-align: center;
   padding: 90px 60px;
 }
-
 .banner h2 {
   color: #4f6d3a;
   font-family: "Montserrat", sans-serif;
@@ -123,7 +99,6 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-
 .banner p {
   color: #2f3e1f;
   font-family: "Open Sans", sans-serif;
@@ -131,13 +106,11 @@ body {
   font-weight: 700;
   margin-bottom: 30px;
 }
-
 .banner img {
   max-width: 1000px;
   padding: 20px;
   border-radius: 14px;
 }
-
 .banner-box video {
   width: 100%;
   height: auto;
@@ -145,22 +118,17 @@ body {
   object-fit: cover;
   border-radius: 5px;
 }
-
-/* Banner box container */
 .banner-box {
   display: inline-block;
   max-width: 100%;
   box-sizing: border-box;
 }
-
-/* HIGHLIGHTED SECTION */
 .highlighted {
   padding: 80px 120px;
   background-color: #faf3e0;
   width: 100%;
   box-sizing: border-box;
 }
-
 .highlighted-header {
   display: flex;
   justify-content: space-between;
@@ -168,7 +136,6 @@ body {
   margin-bottom: 60px;
   width: 100%;
 }
-
 .header-text h2 {
   color: #4f6d3a;
   font-family: "Montserrat", sans-serif;
@@ -177,7 +144,6 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-
 .header-text p {
   color: #2f3e1f;
   font-family: "Open Sans", sans-serif;
@@ -185,15 +151,12 @@ body {
   max-width: 700px;
   font-weight: 700;
 }
-
-/* THE GRID */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   width: 100%;
 }
-
 .card {
   background-color: #4f6d3a;
   padding: 20px;
@@ -204,7 +167,6 @@ body {
   width: 100%;
   min-height: 320px;
 }
-
 .card-img-wrapper {
   padding: 0;
   margin-bottom: 15px;
@@ -215,14 +177,12 @@ body {
   align-items: center;
   overflow: hidden;
 }
-
 .card img {
   width: 100%;
   height: 100%;
   object-fit: contain;
   display: block;
 }
-
 .card h4 {
   color: #d4e8c2;
   font-family: "Montserrat", sans-serif;
@@ -231,7 +191,6 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-
 .card span {
   color: #faf3e0;
   font-family: "Open Sans", sans-serif;
@@ -241,11 +200,9 @@ body {
   line-height: normal;
   padding-top: 20px;
 }
-
-/* Button Styling */
 .outline-btn {
   border: 2px solid #4f6d3a;
-  background: transparent;
+  background: #fff0;
   padding: 10px 20px;
   border-radius: 6px;
   color: #4f6d3a;
@@ -257,20 +214,15 @@ body {
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 .outline-btn:hover {
   background: #4f6d3a;
   color: #faf3e0;
 }
-
-/* ========== SUPPORT ========== */
-/* Container Alignment */
 .support {
   padding: 100px 0;
   background-color: #faf3e0;
   width: 100%;
 }
-
 .support-inner {
   padding: 0 120px;
   max-width: 100%;
@@ -279,14 +231,11 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-/* Header Styling */
 .support h2 {
   color: #4f6d3a;
   font-size: 36px;
   margin-bottom: 10px;
 }
-
 .support-sub {
   color: #2f3e1f;
   font-family: "Open Sans", sans-serif;
@@ -295,8 +244,6 @@ body {
   margin-bottom: 30px;
   font-weight: 700;
 }
-
-/* Row Layout */
 .support-row {
   display: flex;
   align-items: center;
@@ -305,22 +252,17 @@ body {
   margin-bottom: 120px;
   width: 100%;
 }
-
 .support-row.reverse .support-image-box {
   justify-content: flex-end;
 }
-
 .support-row.reverse {
   flex-direction: row-reverse;
 }
-
-/* Image Box Styling */
 .support-image-box {
   flex: 1;
   display: flex;
   justify-content: flex-start;
 }
-
 .support-image-box img {
   width: 100%;
   max-width: 500px;
@@ -328,24 +270,20 @@ body {
   object-fit: contain;
   display: block;
   border-radius: 7px;
-  box-shadow: 5px 7px 4px 0 rgba(47, 62, 31, 0.5);
+  box-shadow: 5px 7px 4px 0 rgb(47 62 31 / 0.5);
 }
-
-/* Content Styling */
 .support-content {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-
 .support-title {
   display: flex;
   align-items: center;
   gap: 20px;
   margin-bottom: 25px;
 }
-
 .icon-circle {
   width: 70px;
   height: 70px;
@@ -355,12 +293,10 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .icon-circle img {
   width: 50px;
   filter: brightness(0) invert(1);
 }
-
 .support-title h3 {
   color: #4f6d3a;
   font-family: "Montserrat", sans-serif;
@@ -369,8 +305,6 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-
-/* Text Consistency */
 .support-content p {
   color: #2f3e1f;
   font-family: "Open Sans", sans-serif;
@@ -379,13 +313,11 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-
-/* Button Styling */
 .support-btn {
   margin-top: 40px;
   border-radius: 7px;
   background: #8a9a5b;
-  box-shadow: -5px 4px 4px 0 rgba(47, 62, 31, 0.25);
+  box-shadow: -5px 4px 4px 0 rgb(47 62 31 / 0.25);
   border: none;
   padding: 12px 28px;
   border-radius: 6px;
@@ -398,11 +330,9 @@ body {
   cursor: pointer;
   transition: background 0.3s ease;
 }
-
 .support-btn:hover {
   background-color: #4f6d3a;
 }
-
 .support-btn a {
   color: inherit;
   text-decoration: none;
@@ -410,12 +340,9 @@ body {
   width: 100%;
   height: 100%;
 }
-
 .support-btn:hover a {
   color: #faf3e0;
 }
-
-/* ========== WHY CHOOSE ZENCOR ========== */
 .why-choose {
   background-color: #d4e8c2;
   padding: 80px 0;
@@ -423,7 +350,6 @@ body {
   margin-top: 0;
   margin-bottom: 170px;
 }
-
 .why-inner {
   padding: 0 120px;
   max-width: 100%;
@@ -431,7 +357,6 @@ body {
   box-sizing: border-box;
   text-align: center;
 }
-
 .why-choose h2 {
   color: #4f6d3a;
   font-family: "Montserrat", sans-serif;
@@ -440,14 +365,11 @@ body {
   margin-bottom: 60px;
   letter-spacing: 1px;
 }
-
-/* Grid Layout */
 .benefits-grid {
   display: flex;
   justify-content: space-between;
   gap: 30px;
 }
-
 .benefit-card {
   flex: 1;
   border: 3px solid #4f6d3a;
@@ -458,32 +380,26 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 300px;
-  background-color: transparent;
+  background-color: #fff0;
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   cursor: pointer;
 }
-
 .benefit-card:hover {
   background-color: #4f6d3a;
   transform: translateY(-10px);
   border-color: #4f6d3a;
-  box-shadow: 0 20px 40px rgba(47, 62, 31, 0.2);
+  box-shadow: 0 20px 40px rgb(47 62 31 / 0.2);
 }
-
-/* Icon Styling */
 .benefit-card i {
   font-size: 60px;
   color: #4f6d3a;
   margin-bottom: 30px;
   transition: all 0.4s ease;
 }
-
 .benefit-card:hover i {
   color: #d4e8c2;
   transform: scale(1.1);
 }
-
-/* Text Styling */
 .benefit-card p {
   color: #2f3e1f;
   font-family: "Open Sans", sans-serif;
@@ -493,18 +409,13 @@ body {
   line-height: normal;
   transition: color 0.3s ease;
 }
-
 .benefit-card:hover p {
   color: #d4e8c2;
 }
-
 .benefit-card p,
 .benefit-card img {
   transition: all 0.4s ease;
 }
-
-/* RESPONSIVE VIEWS */
-/* ========== TABLET VIEW (max-width: 1024px) ========== */
 @media screen and (max-width: 1024px) {
   h1 {
     font-size: 32px;
@@ -515,22 +426,18 @@ body {
   h3 {
     font-size: 22px;
   }
-
   .benefit-card h3 {
     font-size: 20px;
   }
   .benefit-card p {
     font-size: 15px;
   }
-
-  /* Solutions Section */
   .solutions-inner {
     flex-direction: column;
     text-align: center;
     gap: 40px;
     padding: 0 40px;
   }
-
   .solutions-grid {
     flex: 0 0 auto;
     width: 100%;
@@ -539,44 +446,34 @@ body {
     grid-auto-rows: auto;
     gap: 20px;
   }
-
   .product-img:nth-child(n) {
     grid-row: auto / span 1 !important;
   }
-
-  /* Highlighted Products */
   .highlighted {
     padding: 60px 40px;
   }
-
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
-
-  /* Banner Fix for Tablet */
   .banner {
     padding: 60px 30px;
     overflow: hidden;
   }
-
   .banner-box {
     width: 100%;
     max-width: 90%;
     margin: 0 auto;
   }
-
   .banner img {
     width: 100%;
     height: auto;
     box-sizing: border-box;
   }
-
   .banner video {
     max-width: 95%;
     padding: 10px;
   }
-
   .support-img {
     flex: 1;
     max-width: 500px;
@@ -584,29 +481,22 @@ body {
     height: auto;
     margin: 0 auto;
   }
-
   .support-img img {
     width: 100%;
     border-radius: 12px;
   }
-
-  /* Why Choose */
   .benefits-grid {
     display: flex;
     flex-direction: row;
     gap: 20px;
   }
-
   .benefit-card {
     padding: 40px 15px;
     flex: 1;
   }
-
-  /* Why Choose Zencor */
   .why-inner {
     padding: 0 20px;
   }
-
   .benefits-grid {
     display: flex;
     flex-direction: row;
@@ -615,7 +505,6 @@ body {
     gap: 15px;
     width: 100%;
   }
-
   .benefit-card {
     flex: 1;
     padding: 30px 15px;
@@ -624,21 +513,16 @@ body {
     flex-direction: column;
     justify-content: center;
   }
-
   .benefit-card i {
     font-size: 40px;
     margin-bottom: 20px;
   }
-
   .benefit-card p {
     font-size: 14px;
     line-height: 1.4;
   }
 }
-
-/* ========== MOBILE VIEW (max-width: 768px) ========== */
 @media screen and (max-width: 768px) {
-  /* Global Typography */
   h1 {
     font-size: 26px !important;
     line-height: 1.2;
@@ -653,49 +537,38 @@ body {
   h4 {
     font-size: 18px !important;
   }
-
   p,
   .benefit-card p {
     font-size: 14px !important;
     line-height: 1.5;
   }
-
   .banner p {
     font-size: 15px;
     padding: 0 10px;
   }
-
-  /* Solutions Section */
   .solutions {
     padding: 60px 0;
   }
-
   .solutions-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
     width: 100%;
   }
-
   .product-img:nth-child(n) {
     grid-row: auto / span 1 !important;
     width: 100%;
     height: auto;
   }
-
   .solutions-text h2 {
     font-size: 32px;
   }
-
-  /* Banner Fix  */
   .banner {
     padding: 40px 15px;
   }
-
   .banner-box {
     width: 100%;
   }
-
   .banner img {
     width: 100%;
     max-width: 100%;
@@ -703,14 +576,11 @@ body {
     border-radius: 8px;
     box-sizing: border-box;
   }
-
   .banner video {
     max-width: 100%;
     padding: 5px;
     border-radius: 8px;
   }
-
-  /* Reduce Button Sizes */
   .primary-btn,
   .support-btn,
   .outline-btn,
@@ -719,28 +589,22 @@ body {
     font-size: 14px !important;
     width: fit-content;
   }
-
-  /* Highlighted Section */
   .highlighted-header {
     flex-direction: column;
     text-align: center;
     align-items: center;
     gap: 30px;
   }
-
   .highlighted-header .btn,
   .explore-btn {
     margin: 0 auto;
     display: block;
     width: fit-content;
   }
-
   .product-grid {
     grid-template-columns: 1fr;
     gap: 30px;
   }
-
-  /* Support Section */
   .support-row,
   .support-row.reverse {
     flex-direction: column;
@@ -748,7 +612,6 @@ body {
     gap: 50px;
     margin-bottom: 100px;
   }
-
   .support-inner {
     align-items: center;
     padding: 0 30px;
@@ -757,47 +620,38 @@ body {
     align-items: center;
     gap: 20px;
   }
-
   .support-inner h2 {
     text-align: center;
     margin-bottom: 10px;
   }
-
   .support-content {
     align-items: center;
     text-align: center;
   }
-
   .support-title {
     flex-direction: column;
     gap: 10px;
   }
-
   .support-btn {
     margin: 30px auto 0 auto;
     display: block;
     width: fit-content;
     text-align: center;
   }
-
   .support-content p {
     text-align: center;
     max-width: 100%;
   }
-
   .support-img {
     width: 85%;
     max-width: 300px;
     margin: 0 auto;
   }
-
   .support-img img {
     width: 100%;
     height: auto;
     border-radius: 10px;
   }
-
-  /* Why Choose Zencor Stacked */
   .benefits-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -805,7 +659,6 @@ body {
     width: 100%;
     justify-items: center;
   }
-
   .benefit-card {
     width: 90%;
     max-width: 320px;
@@ -815,19 +668,16 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.05);
   }
-
   .benefit-card i {
     font-size: 32px;
     margin: 0 0 12px 0;
   }
-
   .benefit-card h3 {
     font-size: 18px;
     margin-bottom: 8px;
   }
-
   .benefit-card p {
     font-size: 14px;
   }

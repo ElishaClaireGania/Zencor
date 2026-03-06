@@ -2,28 +2,128 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog | Zencor</title>
 
-    <!-- SEO Meta Tags -->
+    <!-- Force www version -->
+    <script>
+      if (window.location.hostname === "zencoragri.com") {
+        window.location.href =
+          "https://www.zencoragri.com" +
+          window.location.pathname +
+          window.location.search;
+      }
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- GEO TAGS -->
+    <meta name="geo.region" content="PH" />
+    <meta name="geo.placename" content="Philippines" />
+
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://www.zencoragri.com/blog.html" />
+
+    <!-- HREFLANG -->
+    <link
+      rel="alternate"
+      href="https://www.zencoragri.com/blog.html"
+      hreflang="en-ph"
+    />
+    <link
+      rel="alternate"
+      href="https://www.zencoragri.com/blog.html"
+      hreflang="x-default"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/img/zencor-logo.png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="//www.googletagmanager.com/gtag/js?id=G-0EB2PF0Q9E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-0EB2PF0Q9E");
+    </script>
+
+    <!-- SEO meta tags -->
+    <title>Farming Insights & Crop Protection Guides | Zencor Blog</title>
     <meta
       name="title"
       content="Farming Insights & Agricultural Tips | Zencor Blog"
     />
     <meta
       name="description"
-      content="Crop protection insights and farming guides on insecticides, herbicides, fungicides, molluscicides, and foliar nutrition from Zencor."
+      content="Expert guides on onion weed control, rice pest management, and foliar nutrition. Learn how Zencor products like Coden, Flory, and Lanex protect your harvest."
     />
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Zencor Farming Insights: Protect Your Harvest"
+    />
+    <meta
+      property="og:description"
+      content="Practical guides and product knowledge for Filipino farmers. Manage pests and improve crop quality with Zencor."
+    />
+    <meta property="og:image" content="img/blog-share-image.jpg" />
+    <meta property="og:url" content="https://www.zencoragri.com/blog.html" />
+
+    <!-- Schema markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Zencor Farming Insights Blog",
+        "description": "Expert guides on crop protection, weed control, and sustainable farming for Filipino farmers.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Zencor",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.zencoragri.com/img/zencor-logo.png"
+          }
+        },
+        "blogPost": [
+          {
+            "@type": "BlogPosting",
+            "headline": "Coden and Flory: Onion Herbicide Solutions Trusted by Filipino Farmers",
+            "description": "Expert guide on managing weed competition in onion production using Zencor Coden and Flory herbicides.",
+            "image": "https://www.zencoragri.com/img/products-hero.png",
+            "author": {
+              "@type": "Organization",
+              "name": "Zencor Agronomy Team"
+            },
+            "datePublished": "2026-01-12",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": "https://www.zencoragri.com/blog.html"
+            }
+          }
+        ]
+      }
+    </script>
+
+    <!-- STYLES -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="css/blog.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/hero-nav.css" />
+    <link rel="stylesheet" href="css/global.min.css" />
+
+    <!-- SCRIPTS -->
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/blog.js" defer></script>
   </head>
+
   <body>
     <!-- Scroll Up -->
     <button id="scrollToTop" title="Go to top">
@@ -62,7 +162,7 @@
     <div class="hero">
       <img
         class="hero-image"
-        src="img/products-hero.png"
+        src="img/blog-hero.png"
         alt="Hero Image"
         loading="eager"
       />
@@ -160,140 +260,14 @@
 
           <!-- ARTICLES -->
           <section class="articles">
-            <div class="articles-grid">
-              <!-- Insecticides -->
-              <article class="post-card">
-                <img
-                  src="img/insecticide.jpg"
-                  alt="Insect pest control in crops"
-                  loading="lazy"
-                />
-                <div class="body">
-                  <span class="chip">Insecticides</span>
-                  <h4>Insecticides for Effective Pest Control</h4>
-                  <p>
-                    Zencor insecticides such as Armethrin, Era, Gusto, Lanex,
-                    Mandal, Malathion, Sturdy, and Zentap help protect crops
-                    from damaging insects that affect leaves, stems, and roots.
-                  </p>
-                  <div class="meta">
-                    <span>Dec 18, 2025</span> • <span>4 min read</span>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Fungicides -->
-              <article class="post-card">
-                <img
-                  src="img/fungicide.jpg"
-                  alt="Fungal disease control in crops"
-                  loading="lazy"
-                />
-                <div class="body">
-                  <span class="chip">Fungicides</span>
-                  <h4>Fungicides for Crop Disease Protection</h4>
-                  <p>
-                    Zencor fungicides such as Fenobin, Mancozeb, S-code, and
-                    Shaw help prevent fungal diseases and protect crops during
-                    critical growth stages.
-                  </p>
-                  <div class="meta">
-                    <span>Nov 30, 2025</span> • <span>4 min read</span>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Herbicides -->
-              <article class="post-card">
-                <img
-                  src="img/herbicide.jpg"
-                  alt="Weed control in farms"
-                  loading="lazy"
-                />
-                <div class="body">
-                  <span class="chip">Herbicides</span>
-                  <h4>Herbicides for Weed Control in Farms</h4>
-                  <p>
-                    Zencor herbicides such as Across, Ez Out, Flory,
-                    Zenfosinate, Maradi, Verge, and Zetanil help control weeds
-                    that compete with crops for nutrients, water, and sunlight.
-                  </p>
-                  <div class="meta">
-                    <span>Nov 10, 2025</span> • <span>5 min read</span>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Stewardship -->
-              <article class="post-card">
-                <img
-                  src="img/healthycrop.jpg"
-                  alt="Safe handling of farm products"
-                  loading="lazy"
-                />
-                <div class="body">
-                  <span class="chip">Stewardship</span>
-                  <h4>
-                    Responsible Use and Handling of Crop Protection Products
-                  </h4>
-                  <p>
-                    Stewardship means using crop protection products correctly
-                    and responsibly. Proper storage, accurate mixing, correct
-                    dosage, and safe disposal help protect farmers, crops, and
-                    the environment.
-                  </p>
-                  <div class="meta">
-                    <span>Oct 25, 2025</span> • <span>3 min read</span>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Nutrition -->
-              <article class="post-card">
-                <img
-                  src="img/foliarfertilizer.jpg"
-                  alt="Foliar fertilizer application"
-                  loading="lazy"
-                />
-                <div class="body">
-                  <span class="chip">Nutrition</span>
-                  <h4>Foliar Nutrition for Strong and Healthy Crops</h4>
-                  <p>
-                    Zengrow foliar fertilizer provides Nitrogen and Organic
-                    Matter that support healthy leaf development, improved plant
-                    strength, and better nutrient absorption during critical
-                    growth periods.
-                  </p>
-                  <div class="meta">
-                    <span>Oct 10, 2025</span> • <span>3 min read</span>
-                  </div>
-                </div>
-              </article>
-
-              <!-- Sustainability -->
-              <article class="post-card">
-                <img
-                  src="img/molluscicide.jpg"
-                  alt="Sustainable farming practices"
-                  loading="lazy"
-                />
-                <div class="body">
-                  <span class="chip">Sustainability</span>
-                  <h4>
-                    Supporting Sustainable Farming Through Proper Crop
-                    Protection
-                  </h4>
-                  <p>
-                    Sustainable farming focuses on effective crop protection
-                    while reducing unnecessary losses. Using the right product
-                    at the right time supports long-term productivity and
-                    responsible farm management.
-                  </p>
-                  <div class="meta">
-                    <span>Sep 28, 2025</span> • <span>4 min read</span>
-                  </div>
-                </div>
-              </article>
+            <div class="articles-grid" id="blog-posts-container">
+              <div style="text-align: center; padding: 40px; grid-column: 1/-1">
+                <i
+                  class="fas fa-spinner fa-spin"
+                  style="font-size: 2em; color: #2e7d32"
+                ></i>
+                <p>Loading articles...</p>
+              </div>
             </div>
           </section>
         </div>
@@ -384,5 +358,6 @@
       <hr class="footer-divider" />
       <p class="copyright">© All Rights Reserved to Zencor.</p>
     </footer>
+    <script src="scripts/blog.js" defer></script>
   </body>
 </html>

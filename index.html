@@ -1,27 +1,108 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <meta
+      name="google-site-verification"
+      content="kB2p-re8Y1QMUKFiN13hzG2CFXEu3RPoMpasRVKI3j0"
+    />
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zencor | Home</title>
 
-    <!-- SEO Meta Tags -->
+    <!-- Force www version -->
+    <script>
+      if (window.location.hostname === "zencoragri.com") {
+        window.location.href =
+          "https://www.zencoragri.com" +
+          window.location.pathname +
+          window.location.search;
+      }
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="geo.region" content="PH" />
+    <meta name="geo.placename" content="Philippines" />
+
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://www.zencoragri.com/" />
+
+    <!-- HREFLANG -->
+    <link rel="alternate" href="https://www.zencoragri.com/" hreflang="en-ph" />
+    <link
+      rel="alternate"
+      href="https://www.zencoragri.com/"
+      hreflang="x-default"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/img/zencor-logo.png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="//www.googletagmanager.com/gtag/js?id=G-0EB2PF0Q9E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-0EB2PF0Q9E");
+    </script>
+
+    <!-- SEO meta tags -->
+    <title>Zencor | Best Crop Care & Agricultural Solutions Philippines</title>
     <meta
       name="title"
-      content="Zencor | Trusted Agricultural & Crop Care Solutions"
+      content="Zencor | Trusted Agricultural & Crop Care Solutions Philippines"
     />
     <meta
       name="description"
-      content="Since 2015, Zencor has provided farmers with reliable crop care solutions. Explore our range of high-quality herbicides, insecticides, fungicides, and fertilizers."
+      content="Since 2015, Zencor provides farmers with the best herbicide for onion farming, rice blast control, and high-quality insecticides and fertilizers."
     />
 
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Zencor | Rooted in Nature, Growing with Purpose"
+    />
+    <meta
+      property="og:description"
+      content="Explore our range of high-quality herbicides, insecticides, and fungicides."
+    />
+    <meta property="og:image" content="img/home-hero.png" />
+    <meta property="og:url" content="https://www.zencoragri.com/" />
+
+    <!-- Schema markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Zencor Agricultural Solutions Catalog",
+        "image": ["https://www.zencoragri.com/img/products-hero.png"],
+        "description": "Premium agricultural herbicides, fungicides, and fertilizers specifically formulated for Philippine crops like rice, onions, and corn.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Zencor"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "url": "https://www.zencoragri.com/product.html",
+          "priceCurrency": "PHP",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    </script>
+
+    <!-- STYLES -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/hero-nav.css" />
+    <link rel="stylesheet" href="css/global.min.css" />
+
+    <!-- SCRIPTS -->
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/video.js" defer></script>
   </head>
@@ -84,28 +165,49 @@
       <div class="solutions-inner">
         <div class="solutions-grid">
           <div class="product-img">
-            <img src="img/s-Code250EC.webp" loading="lazy" />
+            <img
+              src="img/s-Code250EC.webp"
+              loading="lazy"
+              alt="S-Code 250EC Fungicide for Rice Blast Disease"
+            />
           </div>
           <div class="product-img">
-            <img src="img/foliarfertilizer.webp" loading="lazy" />
+            <img
+              src="img/foliarfertilizer.webp"
+              loading="lazy"
+              alt="Zencor Foliar Fertilizer for Crop Growth"
+            />
           </div>
           <div class="product-img">
-            <img src="img/malathion57EC.webp" loading="lazy" />
+            <img
+              src="img/malathion57EC.webp"
+              loading="lazy"
+              alt="Malathion 57EC Insecticide for Pest Control"
+            />
           </div>
           <div class="product-img">
-            <img src="img/gusto500EC.webp" loading="lazy" />
+            <img
+              src="img/gusto500EC.webp"
+              loading="lazy"
+              alt="Gusto 500EC Broad-Spectrum Insecticide"
+            />
           </div>
         </div>
         <div class="solutions-text">
-          <h2>Solutions for Sustainable Growth</h2>
+          <h2>Reliable Crop Care Solutions for Filipino Farmers</h2>
           <p>
             Explore our range of reliable crop protection solutions designed to
-            safeguard harvests and promote sustainable farming. From pesticides
-            to plant health enhancers, each product is formulated with care to
-            help farmers grow stronger, healthier yields while protecting the
-            environment.
+            safeguard harvests and promote sustainable farming. From the **best
+            herbicide for onion farming to plant health enhancers, each product
+            is formulated to help farmers grow stronger yields while protecting
+            the environment.
           </p>
-          <button class="primary-btn">Protect Your Crops →</button>
+          <button
+            class="primary-btn"
+            onclick="window.location.href = 'product.html'"
+          >
+            Protect Your Crops →
+          </button>
         </div>
       </div>
     </section>
@@ -118,15 +220,8 @@
         communities.
       </p>
       <div class="banner-box">
-        <video
-          autoplay
-          muted
-          loop
-          playsinline
-          class="lazy-video"
-          poster="img/discover-home.jpg"
-        >
-          <source data-src="img/zencor_vid.mp4" type="video/mp4" />
+        <video autoplay muted loop playsinline poster="img/discover-home.jpg">
+          <source src="img/zencor_vid.mp4" type="video/mp4" />
         </video>
       </div>
     </section>
@@ -142,21 +237,30 @@
               fields, improve yields, and support sustainable farming.
             </p>
           </div>
-          <button class="outline-btn">Explore our Solutions</button>
+          <button
+            class="outline-btn"
+            onclick="window.location.href = 'product.html'"
+          >
+            Explore our Solutions
+          </button>
         </div>
 
         <div class="product-grid">
           <div class="card">
             <div class="card-img-wrapper">
-              <img src="img/lanex40SP.webp" loading="lazy" />
+              <img src="img/lanex40SP.webp" loading="lazy" alt="Lanex 40SP" />
             </div>
-            <h4>Lanex 40XP</h4>
+            <h4>Lanex 40SP</h4>
             <span>₱550.00</span>
           </div>
 
           <div class="card">
             <div class="card-img-wrapper">
-              <img src="img/mancozeb80wp.webp" loading="lazy" />
+              <img
+                src="img/mancozeb80wp.webp"
+                loading="lazy"
+                alt="Mancozeb 80WP"
+              />
             </div>
             <h4>Mancozeb 80WP</h4>
             <span>₱455.00</span>
@@ -164,7 +268,11 @@
 
           <div class="card">
             <div class="card-img-wrapper">
-              <img src="img/maradi200OD.webp" loading="lazy" />
+              <img
+                src="img/maradi200OD.webp"
+                loading="lazy"
+                alt="Maradi 200 OD"
+              />
             </div>
             <h4>Maradi 200 OD</h4>
             <span>₱750.00</span>
@@ -172,7 +280,11 @@
 
           <div class="card">
             <div class="card-img-wrapper">
-              <img src="img/mandal100SC.webp" loading="lazy" />
+              <img
+                src="img/mandal100SC.webp"
+                loading="lazy"
+                alt="Mandal 100SC"
+              />
             </div>
             <h4>Mandal 100SC</h4>
             <span>₱750.00</span>
@@ -181,55 +293,65 @@
       </div>
     </section>
 
-    <!-- Support Farmers -->
     <section class="support">
       <div class="support-inner">
-        <h2>How We Support Farmers</h2>
+        <h2>How We Support Filipino Farmers</h2>
         <p class="support-sub">
-          Comprehensive crop protection and agricultural support designed to
-          help farmers achieve healthier harvests.
+          Comprehensive **crop protection solutions** and agricultural support
+          designed to help farmers achieve healthier, higher-yielding harvests.
         </p>
 
         <div class="support-row">
           <div class="support-image-box">
-            <img src="img/ez-Out480SL.webp" loading="lazy" alt="Ez Out 480SL" />
+            <img
+              src="img/ez-Out480SL.webp"
+              loading="lazy"
+              alt="Best herbicide for onion farming and weed control"
+            />
           </div>
           <div class="support-content">
             <div class="support-title">
               <div class="icon-circle">
                 <img src="img/herbicides.png" alt="Herbicides Icon" />
               </div>
-              <h3 id="herbicides">HERBICIDES</h3>
+              <h3 id="herbicides">HERBICIDES & WEED MANAGEMENT</h3>
             </div>
             <p>
-              Our herbicides target weeds effectively, ensuring your crops grow
-              without unnecessary competition. By removing invasive plants, they
-              allow your fields to thrive and maximize yield potential. Safe and
-              reliable, they help farmers maintain clean, productive farmland
-              season after season.
+              Our herbicides are the best solutions for onion farming and rice
+              fields, targeting invasive weeds effectively. By removing
+              competition for nutrients, they allow your crops to thrive and
+              maximize yield potential safely.
             </p>
-            <button class="support-btn"><a href="">Control Weeds</a></button>
+            <button class="support-btn">
+              <a href="product.html">Control Weeds Effectively</a>
+            </button>
           </div>
         </div>
 
         <div class="support-row reverse">
           <div class="support-image-box">
-            <img src="img/gusto500EC.webp" loading="lazy" alt="Gusto 500 EC" />
+            <img
+              src="img/gusto500EC.webp"
+              loading="lazy"
+              alt="Fast-acting insecticides for crop pest control"
+            />
           </div>
           <div class="support-content">
             <div class="support-title">
               <div class="icon-circle">
                 <img src="img/insecticides.png" alt="Insecticides Icon" />
               </div>
-              <h3 id="insecticides">INSECTICIDES</h3>
+              <h3 id="insecticides">INSECTICIDES & PEST CONTROL</h3>
             </div>
             <p>
-              Our insecticides protect crops from harmful pests that threaten
-              plant health and harvest quality. Designed for fast action, they
-              safeguard leaves, stems, and roots from damage. With consistent
-              use, farmers can achieve healthier plants and stronger yields.
+              Protect your fields from harmful pests with our fast-acting crop
+              protection products. Designed to safeguard leaves and roots from
+              damage, our insecticides ensure consistent plant health and
+              stronger seasonal yields.
             </p>
-            <button class="support-btn"><a href="">Stop Pests</a></button>
+            <button class="support-btn">
+              <a href="product.html">Stop Crop Pests</a>
+            </button>
           </div>
         </div>
 
@@ -238,23 +360,25 @@
             <img
               src="img/s-Code250EC.webp"
               loading="lazy"
-              alt="S-Code 250 EC"
+              alt="Treatment for rice blast disease and fungal infections"
             />
           </div>
           <div class="support-content">
             <div class="support-title">
               <div class="icon-circle">
-                <img src="img/herbicides.png" alt="Herbicides Icon" />
+                <img src="img/herbicides.png" alt="Fungicides Icon" />
               </div>
-              <h3 id="fungicides">FUNGICIDES</h3>
+              <h3 id="fungicides">FUNGICIDES & DISEASE PREVENTION</h3>
             </div>
             <p>
-              Our fungicides provide dependable defense against diseases caused
-              by fungi. They prevent infections that weaken crops, ensuring
-              plants remain resilient and productive. With this protection,
-              farmers can secure greener fields and more abundant harvests.
+              Defend your crops against rice blast disease and other fungal
+              infections. Our fungicides prevent diseases that weaken harvests,
+              ensuring your plants remain resilient, productive, and green
+              throughout the season.
             </p>
-            <button class="support-btn"><a href="">Prevent Disease</a></button>
+            <button class="support-btn">
+              <a href="product.html">Prevent Rice Disease</a>
+            </button>
           </div>
         </div>
 
@@ -263,26 +387,24 @@
             <img
               src="img/foliarfertilizer.webp"
               loading="lazy"
-              alt="Foliar Fertilizer"
+              alt="Foliar fertilizer and agricultural nutrition solutions"
             />
           </div>
           <div class="support-content">
             <div class="support-title">
               <div class="icon-circle">
-                <img src="img/insecticides.png" alt="Insecticides Icon" />
+                <img src="img/insecticides.png" alt="Fertilizer Icon" />
               </div>
-              <h3 id="fertilizersandmore">FERTILIZERS and MORE</h3>
+              <h3 id="fertilizersandmore">FERTILIZERS & NUTRIENT CARE</h3>
             </div>
             <p>
-              Our fertilizers provide essential nutrients that help crops grow
-              strong, healthy, and productive. Alongside them, our molluscicides
-              protect fields from harmful snails and slugs, while our sprayers
-              ensure precise, efficient application of crop care products.
-              Together, these solutions give farmers the tools they need to
-              nourish, protect, and sustain their harvests with confidence.
+              Boost growth with essential nutrients from our foliar fertilizers.
+              Paired with our molluscicides and sprayers, these agricultural
+              solutions provide the tools needed to nourish and protect harvests
+              with confidence.
             </p>
             <button class="support-btn">
-              <a href="">Support Crop Growth</a>
+              <a href="product.html">Support Crop Growth</a>
             </button>
           </div>
         </div>
@@ -321,15 +443,16 @@
         <div class="footer-left">
           <img
             src="img/zencor-logo.png"
-            alt="Zencor Logo"
+            alt="Zencor Logo - Partner in sustainable agriculture"
             class="footer-logo"
-            loading="eager"
+            loading="lazy"
           />
           <p>
-            Zencor is committed to making farming easier, safer, and more
-            sustainable. Since 2015, we’ve partnered with farmers by providing
-            trusted crop care solutions — from protection to nourishment — that
-            empower communities and ensure harvests for generations to come.
+            <strong>Zencor</strong> is committed to making farming easier,
+            safer, and more sustainable. Since 2015, we've partnered with
+            farmers by providing trusted crop care solutions — from protection
+            to nourishment — that empower communities and ensure harvests for
+            generations to come.
           </p>
         </div>
 
@@ -350,19 +473,25 @@
           <div class="footer-column">
             <h4>Follow Us</h4>
             <div class="social-icons">
-              <a href="https://ph.shp.ee/Z8M8Khz" title="Shopee"
-                ><img src="img/shopee.png" alt="Instagram" loading="eager"
+              <a
+                href="https://ph.shp.ee/Z8M8Khz"
+                title="Shopee"
+                target="_blank"
+                rel="noopener"
+                ><img src="img/shopee.png" alt="Shopee" loading="lazy"
               /></a>
               <a
                 href="https://www.facebook.com/profile.php?id=100093701756468"
                 title="Facebook"
+                target="_blank"
+                rel="noopener"
                 ><img
                   src="img/ic_baseline-facebook.png"
                   alt="Facebook"
-                  loading="eager"
+                  loading="lazy"
               /></a>
               <a href="mailto:zencor2015@gmail.com" title="Email"
-                ><img src="img/mail.png" alt="Email"
+                ><img src="img/mail.png" alt="Email" loading="lazy"
               /></a>
             </div>
           </div>

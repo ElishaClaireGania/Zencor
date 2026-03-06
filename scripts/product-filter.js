@@ -157,11 +157,8 @@ function displayProducts(filter = "all") {
 // Filter Button Logic
 document.querySelectorAll(".filter-btn").forEach((btn) => {
   btn.addEventListener("click", (e) => {
-    // UI Update
     document.querySelector(".filter-btn.active").classList.remove("active");
     btn.classList.add("active");
-
-    // Logic Update
     displayProducts(btn.getAttribute("data-filter"));
   });
 });

@@ -2,31 +2,125 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zencor | Contact Us</title>
 
-    <!-- SEO Meta Tags -->
+    <!-- Force www version -->
+    <script>
+      if (window.location.hostname === "zencoragri.com") {
+        window.location.href =
+          "https://www.zencoragri.com" +
+          window.location.pathname +
+          window.location.search;
+      }
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <!-- GEO TAGS -->
+    <meta name="geo.region" content="PH" />
+    <meta name="geo.placename" content="Philippines" />
+
+    <!-- CANONICAL URL -->
+    <link rel="canonical" href="https://www.zencoragri.com/contact.html" />
+
+    <!-- HREFLANG -->
+    <link
+      rel="alternate"
+      href="https://www.zencoragri.com/contact.html"
+      hreflang="en-ph"
+    />
+    <link
+      rel="alternate"
+      href="https://www.zencoragri.com/contact.html"
+      hreflang="x-default"
+    />
+
+    <link rel="icon" type="image/x-icon" href="/img/zencor-logo.png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="//www.googletagmanager.com/gtag/js?id=G-0EB2PF0Q9E"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-0EB2PF0Q9E");
+    </script>
+
+    <!-- SEO meta tags -->
+    <title>
+      Contact Zencor | Get Agricultural Support & Crop Care Advice Philippines
+    </title>
     <meta
       name="title"
-      content="Contact Us | Zencor Agricultural Solutions Pampanga"
+      content="Contact Zencor | Reach Our Agronomy Experts in Pampanga"
     />
     <meta
       name="description"
-      content="Have questions about our fertilizers or crop solutions? Contact Zencor in Santa Ana, Pampanga. We're here to provide expert agricultural support and partnership."
+      content="Get in touch with Zencor's agricultural experts. Visit our Santa Ana, Pampanga office, call +63 917 700 1857, or email zencor2015@gmail.com for crop protection solutions."
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Contact Zencor | Talk to Our Farming Experts"
     />
-    <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
+    <meta
+      property="og:description"
+      content="Reach out to Zencor for questions about herbicides, insecticides, and sustainable farming solutions. We're here to help Filipino farmers."
     />
+    <meta property="og:image" content="img/contact-hero.png" />
+    <meta property="og:url" content="https://www.zencoragri.com/contact.html" />
 
+    <!-- Schema markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Zeal Ecological Nature Corporation (Zencor)",
+        "image": "https://www.zencoragri.com/img/zencor-logo.png",
+        "@id": "https://www.zencoragri.com/contact.html",
+        "url": "https://www.zencoragri.com",
+        "telephone": "+639177001857",
+        "email": "zencor2015@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Brgy. San Bartolome",
+          "addressLocality": "Santa Ana",
+          "addressRegion": "Pampanga",
+          "postalCode": "2022",
+          "addressCountry": "PH"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 15.1017,
+          "longitude": 120.7678
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      }
+    </script>
+
+    <!-- STYLES -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/contact.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/hero-nav.css" />
+    <link rel="stylesheet" href="css/global.min.css" />
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="scripts/nav.js" defer></script>
     <script src="scripts/form.js" defer></script>
   </head>
@@ -90,20 +184,22 @@
     <main class="main-content">
       <div class="container">
         <section class="content-wrapper">
-          <section class="contact-form">
-            <h3>Reach Out! We are one message away.</h3>
+          <section class="contact-form" aria-labelledby="form-heading">
+            <h2 id="form-heading">Reach Out! We are one message away.</h2>
             <p class="form-intro">
-              If you have any questions or suggestions, fill the form below.
-              Responses are sent 24 hours after messages are sent.
+              Our agronomy experts are ready to assist you. Fill out the form
+              below and receive a response within 24 hours.
             </p>
 
-            <form id="contactForm">
+            <form id="contactForm" action="#" method="POST">
               <div class="form-row">
                 <div class="form-group">
                   <label for="firstName">First Name</label>
                   <input
                     type="text"
                     id="firstName"
+                    name="firstName"
+                    autocomplete="given-name"
                     class="form-control"
                     placeholder="First Name"
                     required
@@ -114,6 +210,8 @@
                   <input
                     type="text"
                     id="lastName"
+                    name="lastName"
+                    autocomplete="family-name"
                     class="form-control"
                     placeholder="Last Name"
                     required
@@ -126,8 +224,10 @@
                 <input
                   type="email"
                   id="email"
+                  name="email"
+                  autocomplete="email"
                   class="form-control"
-                  placeholder="you@gmail.com"
+                  placeholder="you@example.com"
                   required
                 />
               </div>
@@ -137,43 +237,52 @@
                 <input
                   type="tel"
                   id="phone"
+                  name="phone"
+                  autocomplete="tel"
                   class="form-control"
-                  placeholder="+63 56464981"
+                  placeholder="+63 9xx xxx xxxx"
                 />
               </div>
 
               <div class="form-group">
-                <label for="message">Message</label>
+                <label for="message">Your Message</label>
                 <textarea
                   id="message"
+                  name="message"
                   class="form-control"
-                  placeholder="Your message here..."
+                  placeholder="How can Zencor help your farm today?"
+                  required
                 ></textarea>
               </div>
 
-              <button type="submit" class="btn">Send Message</button>
+              <button type="submit" class="btn primary-btn">
+                Send Message
+              </button>
+              <div id="formStatus" class="form-status"></div>
             </form>
           </section>
 
           <section class="contact-info">
             <div class="product-showcase">
-              <div class="tp2-image">
+              <figure class="tp2-image">
                 <img
                   src="img/contact-partner.png"
-                  alt="Partner in Farming"
+                  alt="Zencor Field Expert with Healthy Crops"
                   loading="lazy"
                 />
-                <div class="partner-glass">
+                <figcaption class="partner-glass">
                   <h3>Your Partner in Farming</h3>
-                </div>
-              </div>
+                </figcaption>
+              </figure>
             </div>
 
             <div class="contact-details">
               <div class="detail-item">
-                <div class="detail-icon"><i class="fas fa-envelope"></i></div>
+                <div class="detail-icon" aria-hidden="true">
+                  <i class="fas fa-envelope"></i>
+                </div>
                 <div class="detail-content">
-                  <h4>Email</h4>
+                  <h4>Email Support</h4>
                   <p>
                     <a href="mailto:zencor2015@gmail.com"
                       >zencor2015@gmail.com</a
@@ -183,20 +292,28 @@
               </div>
 
               <div class="detail-item">
-                <div class="detail-icon"><i class="fas fa-phone"></i></div>
+                <div class="detail-icon" aria-hidden="true">
+                  <i class="fas fa-phone"></i>
+                </div>
                 <div class="detail-content">
-                  <h4>Contact No.</h4>
-                  <p>+63 0917 700 1857</p>
+                  <h4>Direct Hotline</h4>
+                  <p><a href="tel:+639177001857">+63 917 700 1857</a></p>
                 </div>
               </div>
 
               <div class="detail-item">
-                <div class="detail-icon">
+                <div class="detail-icon" aria-hidden="true">
                   <i class="fab fa-facebook-f"></i>
                 </div>
                 <div class="detail-content">
-                  <h4>Facebook</h4>
-                  <p><a href="#">Zeal Ecological Nature Corporation</a></p>
+                  <h4>Official Facebook</h4>
+                  <p>
+                    <a
+                      href="https://www.facebook.com/profile.php?id=100093701756468"
+                      target="_blank"
+                      >Zeal Ecological Nature Corporation</a
+                    >
+                  </p>
                 </div>
               </div>
             </div>
@@ -207,35 +324,35 @@
           <div class="find-us-content">
             <div class="map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3852.019625464651!2d120.77163332254258!3d15.102247037034513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396fb90d609c50b%3A0xf18904ec5c4545c9!2sZENCOR%20Pampanga%20Office!5e0!3m2!1sen!2sph!4v1769013461265!5m2!1sen!2sph"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.56!2d120.76!3d15.10!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f7!2sSanta%20Ana%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1700000000000"
+                title="Zencor Office Location in Santa Ana, Pampanga"
                 style="border: 0"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                alt="Zencor Location"
-              ></iframe>
+              >
+              </iframe>
             </div>
 
             <div class="location-info">
-              <h2>Zeal Ecological Nature Corporation</h2>
+              <h2>Our Headquarters</h2>
               <p class="location-intro">
-                We're here to make farming easier with reliable support and
-                solutions tailored to your needs. Reach out today and let Zencor
-                be your trusted partner in sustainable agriculture.
+                Visit our main office in Pampanga to discuss large-scale
+                distribution or specialized crop protection protocols.
               </p>
 
               <div class="info-list">
                 <div class="info-item">
-                  <i class="fas fa-question-circle"></i>
-                  <span>Online support available 24/7</span>
-                </div>
-                <div class="info-item">
-                  <i class="fas fa-map-marker-alt"></i>
+                  <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
                   <span>Brgy. San Bartolome, Santa Ana, Pampanga</span>
                 </div>
                 <div class="info-item">
-                  <i class="fas fa-clock"></i>
-                  <span>Mon-Fri: 9AM-5PM</span>
+                  <i class="fas fa-clock" aria-hidden="true"></i>
+                  <span>Mon-Fri: 9:00 AM - 5:00 PM</span>
+                </div>
+                <div class="info-item">
+                  <i class="fas fa-check-circle" aria-hidden="true"></i>
+                  <span>Walk-in consultations welcome</span>
                 </div>
               </div>
             </div>
@@ -250,15 +367,16 @@
         <div class="footer-left">
           <img
             src="img/zencor-logo.png"
-            alt="Zencor Logo"
+            alt="Zencor Logo - Partner in sustainable agriculture"
             class="footer-logo"
-            loading="eager"
+            loading="lazy"
           />
           <p>
-            Zencor is committed to making farming easier, safer, and more
-            sustainable. Since 2015, we’ve partnered with farmers by providing
-            trusted crop care solutions — from protection to nourishment — that
-            empower communities and ensure harvests for generations to come.
+            <strong>Zencor</strong> is committed to making farming easier,
+            safer, and more sustainable. Since 2015, we've partnered with
+            farmers by providing trusted crop care solutions — from protection
+            to nourishment — that empower communities and ensure harvests for
+            generations to come.
           </p>
         </div>
 
@@ -279,19 +397,25 @@
           <div class="footer-column">
             <h4>Follow Us</h4>
             <div class="social-icons">
-              <a href="https://ph.shp.ee/Z8M8Khz" title="Shopee"
-                ><img src="img/shopee.png" alt="Shopee" loading="eager"
+              <a
+                href="https://ph.shp.ee/Z8M8Khz"
+                title="Shopee"
+                target="_blank"
+                rel="noopener"
+                ><img src="img/shopee.png" alt="Shopee" loading="lazy"
               /></a>
               <a
                 href="https://www.facebook.com/profile.php?id=100093701756468"
                 title="Facebook"
+                target="_blank"
+                rel="noopener"
                 ><img
                   src="img/ic_baseline-facebook.png"
                   alt="Facebook"
-                  loading="eager"
+                  loading="lazy"
               /></a>
               <a href="mailto:zencor2015@gmail.com" title="Email"
-                ><img src="img/mail.png" alt="Email"
+                ><img src="img/mail.png" alt="Email" loading="lazy"
               /></a>
             </div>
           </div>

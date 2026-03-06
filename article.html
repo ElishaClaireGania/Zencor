@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- Force www version -->
+    <script>
+      if (window.location.hostname === "zencoragri.com") {
+        window.location.href =
+          "https://www.zencoragri.com" +
+          window.location.pathname +
+          window.location.search;
+      }
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="geo.region" content="PH" />
+    <meta name="geo.placename" content="Philippines" />
+    <link rel="canonical" href="https://www.zencoragri.com/article.html" />
+    <link rel="icon" type="image/x-icon" href="/img/zencor-logo.png" />
+
+    <title>Blog Article | Zencor</title>
+    <meta
+      name="description"
+      content="Read expert insights on crop protection and farming practices from Zencor."
+    />
+
+    <!-- STYLES -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/global.min.css" />
+    <link rel="stylesheet" href="css/article.css" />
+
+    <!-- SCRIPTS -->
+    <script src="scripts/blog.js" defer></script>
+    <script src="scripts/nav.js" defer></script>
+    <script src="scripts/article-render.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Scroll Up -->
+    <button id="scrollToTop" title="Go to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Main Content -->
+    <main class="article-page">
+      <div class="article-container">
+        <div class="article-back-wrapper">
+          <a href="blog.html" class="article-back-btn" id="back-to-blog">
+            <i class="fas fa-arrow-left"></i> Back to Blog
+          </a>
+        </div>
+
+        <!-- Article Wrapper -->
+        <div class="article-wrapper" id="article-container">
+          <div class="article-loading" id="loading-state">
+            <i class="fas fa-spinner fa-spin"></i>
+            <p>Loading article...</p>
+          </div>
+          <div id="article-content" style="display: none"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <section class="footer-content">
+        <div class="footer-left">
+          <img
+            src="img/zencor-logo.png"
+            alt="Zencor Logo"
+            class="footer-logo"
+            loading="eager"
+          />
+          <p>
+            Zencor is committed to making farming easier, safer, and more
+            sustainable. Since 2015, we've partnered with farmers by providing
+            trusted crop care solutions — from protection to nourishment — that
+            empower communities and ensure harvests for generations to come.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>About Us</h4>
+            <a href="about.html#history">History</a>
+            <a href="about.html#mission">Mission</a>
+            <a href="about.html#vision">Vision</a>
+          </div>
+          <div class="footer-column">
+            <h4>Our Products</h4>
+            <a href="index.html#herbicides">Herbicides</a>
+            <a href="index.html#insecticides">Insecticides</a>
+            <a href="index.html#fungicides">Fungicides</a>
+            <a href="index.html#fertilizersandmore">Fertilizers & More</a>
+          </div>
+          <div class="footer-column">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+              <a href="https://ph.shp.ee/Z8M8Khz" title="Shopee"
+                ><img src="img/shopee.png" alt="Shopee" loading="eager"
+              /></a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100093701756468"
+                title="Facebook"
+                ><img
+                  src="img/ic_baseline-facebook.png"
+                  alt="Facebook"
+                  loading="eager"
+              /></a>
+              <a href="mailto:zencor2015@gmail.com" title="Email"
+                ><img src="img/mail.png" alt="Email" loading="eager"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr class="footer-divider" />
+      <p class="copyright">© All Rights Reserved to Zencor.</p>
+    </footer>
+  </body>
+</html>
