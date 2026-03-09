@@ -1,5 +1,4 @@
 const products = [
-  //   Fungicides
   {
     name: "S-Code 250EC",
     type: "Fungicide",
@@ -21,7 +20,6 @@ const products = [
     img: "img/mancozeb80wp.webp",
     altText: "Zencor Mancozeb 80WP",
   },
-  //   Insecticides
   {
     name: "Lanex 40SP",
     type: "Insecticide",
@@ -64,7 +62,6 @@ const products = [
     img: "img/malathion57EC.webp",
     altText: "Malathion 57EC",
   },
-  //   Herbicides
   {
     name: "Maradi 200OD",
     type: "Herbicide",
@@ -86,7 +83,6 @@ const products = [
     img: "img/ez-Out480SL.webp",
     altText: "Ez-Out 480SL",
   },
-  //   Molluscicides
   {
     name: "Toss-Up (Metaldehyde) 6% Pellet",
     type: "Molluscicide",
@@ -101,7 +97,6 @@ const products = [
     img: "img/zencocide70WP.webp",
     altText: "Zencocide 70WP",
   },
-  //   Fertilizers & Sprayers
   {
     name: "Zencor Plus Highgrade",
     type: "Fertilizers & Sprayers",
@@ -120,12 +115,11 @@ const products = [
 
 function displayProducts(filter = "all") {
   const grid = document.getElementById("productGrid");
-  grid.innerHTML = ""; // Clear current grid
+  grid.innerHTML = "";
 
   const filtered =
     filter === "all" ? products : products.filter((p) => p.type === filter);
 
-  // Check if there are no products in the filtered list
   if (filtered.length === 0) {
     grid.innerHTML = `
       <div class="no-products-message">
@@ -134,7 +128,7 @@ function displayProducts(filter = "all") {
         <p>We're currently updating our stock for the <strong>${filter}</strong> category. Please check back soon!</p>
       </div>
     `;
-    return; // Exit the function early
+    return;
   }
 
   filtered.forEach((product) => {
@@ -154,7 +148,6 @@ function displayProducts(filter = "all") {
   });
 }
 
-// Filter Button Logic
 document.querySelectorAll(".filter-btn").forEach((btn) => {
   btn.addEventListener("click", (e) => {
     document.querySelector(".filter-btn.active").classList.remove("active");
@@ -163,5 +156,4 @@ document.querySelectorAll(".filter-btn").forEach((btn) => {
   });
 });
 
-// Initial Load
 displayProducts();

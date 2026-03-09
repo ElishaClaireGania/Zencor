@@ -1,4 +1,3 @@
-// AIRA ROSAL - Nutrition Posts
 const airaPosts = [
   {
     id: 1,
@@ -175,8 +174,6 @@ const airaPosts = [
     `,
   },
 ];
-
-// KATHERINE SANCHEZ - Herbicides Posts
 const katherinePosts = [
   {
     id: 3,
@@ -322,8 +319,6 @@ const katherinePosts = [
     `,
   },
 ];
-
-// ELISHA CLAIRE GANIA - Insecticides Posts
 const elishaPosts = [
   {
     id: 5,
@@ -490,7 +485,6 @@ const elishaPosts = [
     `,
   },
 ];
-// ROBYN GONZALES - Fungicides Posts
 const robynPosts = [
   {
     id: 7,
@@ -679,7 +673,6 @@ const robynPosts = [
     `,
   },
 ];
-// ANDREW DIZON - Nutrition Posts
 const andrewPosts = [
   {
     id: 9,
@@ -883,7 +876,6 @@ const andrewPosts = [
   },
 ];
 
-// COMBINE ALL POSTS
 const allPosts = [
   ...airaPosts,
   ...katherinePosts,
@@ -891,8 +883,6 @@ const allPosts = [
   ...robynPosts,
   ...andrewPosts,
 ];
-
-// Sort by date (newest first)
 allPosts.sort((a, b) => {
   const months = {
     January: 1,
@@ -915,17 +905,14 @@ allPosts.sort((a, b) => {
   return months[monthB] - months[monthA];
 });
 
-// RENDER POSTS ON BLOG PAGE
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("blog-posts-container");
-
   if (!container) {
     console.log("Not on blog listing page");
     return;
   }
 
   container.innerHTML = "";
-
   if (allPosts.length === 0) {
     container.innerHTML =
       '<p style="text-align: center; padding: 40px;">No blog posts available.</p>';
@@ -935,7 +922,6 @@ document.addEventListener("DOMContentLoaded", function () {
   allPosts.forEach((post) => {
     const article = document.createElement("article");
     article.className = "post-card";
-
     article.innerHTML = `
       <a href="article.html?id=${post.id}" style="text-decoration:none; color:inherit;">
        <div class="image-wrapper">  <!-- NEW wrapper div -->
@@ -960,8 +946,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     container.appendChild(article);
   });
-
-  // Add category filter functionality
   const filterButtons = document.querySelectorAll(".filter-btn");
   if (filterButtons.length > 0) {
     filterButtons.forEach((btn) => {
@@ -986,8 +970,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
-
-// SINGLE ARTICLE PAGE FUNCTIONALITY
 window.loadArticle = function () {
   const urlParams = new URLSearchParams(window.location.search);
   const articleId = parseInt(urlParams.get("id"));
@@ -1022,7 +1004,6 @@ window.loadArticle = function () {
   }
 };
 
-// Auto-load article if on article page
 if (window.location.pathname.includes("article.html")) {
   document.addEventListener("DOMContentLoaded", window.loadArticle);
 }

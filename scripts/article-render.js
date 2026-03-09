@@ -1,17 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Get article ID from URL
   const params = new URLSearchParams(window.location.search);
   const id = parseInt(params.get("id"));
   const loadingEl = document.getElementById("loading-state");
   const contentEl = document.getElementById("article-content");
   const articleWrapper = document.getElementById("article-container");
-
-  // Check if ID is valid
   if (isNaN(id)) {
     showError("Invalid article ID");
     return;
   }
-
   const allPosts = [
     ...(typeof airaPosts !== "undefined" ? airaPosts : []),
     ...(typeof katherinePosts !== "undefined" ? katherinePosts : []),
@@ -29,7 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const post = allPosts.find((p) => p.id === id);
-
   if (loadingEl) loadingEl.style.display = "none";
   if (contentEl) contentEl.style.display = "block";
   if (post) {
@@ -42,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
         post.content.substring(0, 160).replace(/<[^>]*>/g, "") + "...",
       );
     }
-
     contentEl.innerHTML = `
       <div class="article-header">
         <span class="chip">
@@ -83,13 +77,11 @@ document.addEventListener("DOMContentLoaded", function () {
       </div>
     `;
 
-    // Add schema markup
     addSchemaMarkup(post);
   } else {
     showError("Article not found");
   }
 
-  // Error function
   function showError(message) {
     if (loadingEl) loadingEl.style.display = "none";
     if (contentEl) contentEl.style.display = "block";
@@ -107,8 +99,6 @@ document.addEventListener("DOMContentLoaded", function () {
       `;
     }
   }
-
-  // Schema markup function
   function addSchemaMarkup(post) {
     const schema = {
       "@context": "https://schema.org",
