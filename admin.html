@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Zencor Admin Dashboard</title>
+
+<link rel="stylesheet" href="css/global.min.css">
+
+<style>
+
+body{
+font-family:'Open Sans',sans-serif;
+background:#f5f7f4;
+padding:120px 40px;
+}
+
+h1{
+color:#4f6d3a;
+margin-bottom:30px;
+font-family:'Montserrat',sans-serif;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+thead{
+background:#4f6d3a;
+color:white;
+}
+
+th,td{
+padding:14px 18px;
+text-align:left;
+}
+
+tbody tr{
+border-bottom:1px solid #eee;
+transition:background 0.2s;
+}
+
+tbody tr:hover{
+background:#f3f8ef;
+}
+
+th{
+font-weight:600;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>Registered Zencor Users</h1>
+
+<table>
+
+<thead>
+
+<tr>
+<th>First Name</th>
+<th>Last Name</th>
+<th>Email</th>
+<th>Registration Date</th>
+</tr>
+
+</thead>
+
+<tbody id="userTable">
+
+</tbody>
+
+</table>
+
+<script src="scripts/admin.js"></script>
+
+</body>
+
+</html>
