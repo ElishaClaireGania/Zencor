@@ -1,35 +1,33 @@
-document.getElementById("loginForm").addEventListener("submit", function(e){
+document.getElementById("loginForm").addEventListener("submit", function (e) {
 
-e.preventDefault();
+  e.preventDefault();
 
-const data = {
+  const data = {
+    email: document.getElementById("email").value,
+    password: document.getElementById("password").value
+  };
 
-email: document.getElementById("email").value,
-password: document.getElementById("password").value
+  fetch("http://localhost:3000/login", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  })
+  .then(res => res.json())
+  .then(response => {
 
-};
+    alert(response.message);
 
-fetch("http://localhost:3000/login",{
+    if (response.message === "Login successful") {
 
-method:"POST",
+      localStorage.setItem("zencorUser", JSON.stringify({
+        email: data.email
+      }));
 
-headers:{
-"Content-Type":"application/json"
-},
+      window.location.href = "index.html";
+    }
 
-body:JSON.stringify(data)
-
-})
-
-.then(res => res.json())
-.then(data => {
-
-alert(data.message);
-
-if(data.message === "Login successful"){
-window.location.href = "index.html";
-}
-
-});
+  });
 
 });
